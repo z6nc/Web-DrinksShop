@@ -1,6 +1,6 @@
 
 
-<nav class="text-white w-full flex  justify-evenly my-3  items-center  fixed z-30  backdrop-blur-sm  ">
+<nav class="text-white w-full flex  justify-evenly py-3  items-center  fixed z-30  backdrop-blur-sm  ">
     <ul class="lg:flex tracking-wide font-light   hidden">
         <a class="p-6 hover:scale-105 transition text-[13px]  border-b-2 border-white " href=""><li>HOME</li></a>
         <a class="p-6 hover:scale-110 transition   text-[13px]  hover:border-b-2 border-white"  href=""><li class="mx-5">PRODUCTOS </li></a>
@@ -28,10 +28,10 @@
 
 </nav>
 
-
-<nav class="Menu fixed top-0 left-0 bg-[#ffffff]  h-full hidden flex-col  w-[80%] z-50 ">
+<!-- NavBar Responsive -->
+<nav class="Menu fixed top-0 left-[-100%] bg-[#ffffff]  slide-in  h-full hidden flex-col  w-[80%] z-50 ">
   <div class="py-5 px-6">
-    <span class="  text-2xl font-bold text-black ">X</span>
+    <span class="  text-2xl font-bold text-black">X</span>
   <div class=" flex flex-col  w-auto my-10  ">
       <a class="border-[#cfcece] border-b-[1px] font-medium text-[15px] py-4" href="/">HOME</a>
       <a class="border-[#cfcece] border-b-[1px]  font-medium text-[15px] py-4" href="/About">PRODUCTOS</a>
@@ -48,16 +48,27 @@
     </div>
   </div>
   </div>
-  
-  
 </nav>
- 
+ <!-- Estilos de  titulo Principal -->
 <style>
   .customShadow {
     -webkit-text-stroke: 1px rgb(255, 255, 255); /* Para navegadores basados en WebKit (Safari, Chrome) */
     text-stroke: 1px rgb(255, 255, 255); /* Estándar */
 }
+
+  .slide-in {
+    animation: slideIn .6s forwards;
+  }
+@keyframes slideIn {
+  
+  100% {
+    left: 0;
+  }
+}
+
+
 </style>
+<!-- Script Responsive -->
 <script>
   const botones = document.querySelectorAll(".split");
 botones.forEach(boton => {
