@@ -1,55 +1,27 @@
 ---
-import { Producto  } from "./productos.ts";
-
+import { Producto } from "./productos.ts";
 ---
 
 <section class="font-Amatic">
   <h1>Productos</h1>
-  <div
-    class="grid lg:grid-cols-6 grid-cols-3 gap-5 max-w-7xl mx-auto "
-  >
+  <div class="grid lg:grid-cols-6 grid-cols-3 gap-5 max-w-7xl mx-auto">
     {
-      
-        Producto.map(({ nombre, img, marca, precio }) => (
+      Producto.slice(0, 5).map(({ nombre, img, marca, precio }) => (
         <article class="shadow-xl hover:scale-105 transition rounded-lg p-3  ">
           <img class="" src={img} alt="" />
           <div class="py-3 px-2">
-            <p class="text-[#767676] tracking-wider text-[11px] uppercase">{marca}</p>
+            <p class="text-[#767676] tracking-wider text-[11px] uppercase">
+              {marca}
+            </p>
             <h4 class="text-base font-extralight ">{nombre}</h4>
             <h3 class="text-lg font-semibold text-[#717171]">S/ {precio}</h3>
 
-            <div class="flex justify-center items-center gap-4 mt-4">
-              <button>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"
-                >
-                  <>
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                    <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                    <path d="M17 17h-11v-14h-2" />
-                    <path d="M6 5l14 1l-1 7h-13" />
-                  </>
-                </svg>
-              </button>
-              <button>
-                <a href="">Comprar</a>
-              </button>
-            </div>
+            <button class="mt-4 bg">
+              <a href="">Comprar</a>
+            </button>
           </div>
         </article>
       ))
-      }
-      
-    
+    }
   </div>
 </section>

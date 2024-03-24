@@ -1,5 +1,4 @@
 
-
 <nav class="text-white w-full flex  justify-evenly py-3  items-center  fixed z-30  backdrop-blur-sm  ">
     <ul class="lg:flex tracking-wide font-light   hidden">
         <a class="p-6 hover:scale-105 transition text-[13px]  border-b-2 border-white " href=""><li>HOME</li></a>
@@ -13,8 +12,8 @@
  <h2 class="text-[30px] lg:text-[36px] font-Protest text-transparent customShadow  font-black cursor-default uppercase hover:scale-105 transition ">RefrescaShop</h2>
       <ul class="lg:flex tracking-wide px-5  font-light hidden">
         <a class="p-6 hover:scale-110 transition  text-[13px] hover:border-b-2 border-white "  href=""><li>ABOUT</li></a>
-        <a  class="p-6 mx-5  hover:scale-110 transition  text-[13px]  hover:border-b-2 border-white "  href=""><li class="">CARRITO COMPRA</li></a>
         <a class=" p-6 hover:scale-110 transition  text-[13px]  hover:border-b-2 border-white " href=""><li>USUARIO</li></a>
+        <a  class="p-6   hover:scale-110 transition  text-[13px]  hover:border-b-2 border-white "  href=""><li class="">CARRITO COMPRA</li></a>
 
       </ul>
       <div class="flex gap-3 lg:hidden">
@@ -29,12 +28,12 @@
 </nav>
 
 <!-- NavBar Responsive -->
-<nav class="Menu fixed top-0 left-[-100%] bg-[#ffffff]  slide-in  h-full hidden flex-col  w-[80%] z-50 ">
+<nav class="Menu slide-in fixed top-0 left-[-100%] bg-[#ffffff]  slide-in  h-full hidden flex-col  w-[80%] z-50 ">
   <div class="py-5 px-6">
     <span class="  text-2xl font-bold text-black">X</span>
   <div class=" flex flex-col  w-auto my-10  ">
       <a class="border-[#cfcece] border-b-[1px] font-medium text-[15px] py-4" href="/">HOME</a>
-      <a class="border-[#cfcece] border-b-[1px]  font-medium text-[15px] py-4" href="/About">PRODUCTOS</a>
+      <a class="border-[#cfcece] border-b-[1px]  font-medium text-[15px] py-4" href="#">PRODUCTOS</a>
       <a class="border-[#cfcece] border-b-[1px] font-medium text-[15px] py-4" href="#">CATEGORIAS </a>
       <a class="border-[#cfcece] border-b-[1px] font-medium  text-[15px] py-4" href="#">ABOUT </a>
       <a class="border-[#cfcece] border-b-[1px] font-medium  text-[15px] py-4" href="#">INICIA SESSION </a>
@@ -67,6 +66,7 @@
 }
 
 
+
 </style>
 <!-- Script Responsive -->
 <script>
@@ -74,6 +74,7 @@
 botones.forEach(boton => {
   boton.addEventListener('click', () => {
     (document.querySelector(".Menu") as HTMLElement).style.display = "flex";
+
   });
 });
 
