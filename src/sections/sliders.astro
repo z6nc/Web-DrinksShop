@@ -1,16 +1,19 @@
-
-<section class="grid  grid-cols-2 gap-4   lg:grid-cols-4 h-64 font-Protest">
-    <article class="bg-no-repeat bg-cover backdrop-brightness-50 rounded-md flex justify-center items-center " style="background-image: url('https://e.rpp-noticias.io/large/2016/10/14/545754_266425.png');">
-     <a href=""><h3 class=" text-[27px] customShadow text-white">GASEOSAS</h3></a> 
+---
+const StyleArticle="bg-no-repeat bg-cover hover:scale-105 transition backdrop-brightness-50 rounded-md flex justify-center items-center";
+const StyleH3="text-[27px] customShadow text-xl  lg:text-2xl  text-white";
+---
+<section class="grid  grid-cols-2 gap-4   lg:grid-cols-4 lg:h-64 h-56 font-Protest my-3 mx-3  lg:mx-0">
+    <article class={StyleArticle} style="background-image: url('https://e.rpp-noticias.io/large/2016/10/14/545754_266425.png');">
+     <a href=""><h3 class={StyleH3}>GASEOSAS</h3></a> 
     </article>
-    <article class="bg-no-repeat bg-cover   rounded-md flex justify-center items-center" style="background-image: url('https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/ZGIOCMP7FZOZRO7LKNC7CMWP7Y.jpg');">
-   <a href=""><h3 class=" text-[27px] customShadow  text-white">AGUA MINERAL</h3></a> 
+    <article class={StyleArticle} style="background-image: url('https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/ZGIOCMP7FZOZRO7LKNC7CMWP7Y.jpg');">
+   <a href=""><h3 class={StyleH3}>AGUA MINERAL</h3></a> 
     </article>
-    <article class="bg-no-repeat bg-cover" style="background-image: url('https://thefoodtech.com/wp-content/uploads/2022/10/cerveza-scaled.jpg');">
- <h3>CERVESAS</h3>
+    <article class={StyleArticle} style="background-image: url('https://thefoodtech.com/wp-content/uploads/2022/10/cerveza-scaled.jpg');">
+ <a href=""><h3 class={StyleH3}>CERVESAS</h3></a>
     </article>
-    <article class="bg-no-repeat bg-cover" style="background-image: url('https://mbsperu.com/wp-content/uploads/2022/06/jugosperui.jpg');">
-<h3>JUEGOS</h3>
+    <article class={StyleArticle} style="background-image: url('https://mbsperu.com/wp-content/uploads/2022/06/jugosperui.jpg');">
+<a   href=""><h3 class={StyleH3}>JUEGOS</h3></a>
     </article>
 </section>
 
