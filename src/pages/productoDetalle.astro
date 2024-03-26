@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../sections/navbar.astro";
+import Footer from "../sections/footer.astro";
+
+---
+
+
+<Layout title="RefrescaShop">
+  <header>
+    <Navbar />
+  </header>
+  <main class="bg-yellow-200  ">
+    <div id="detalles-producto">
+
+    </div>
+    <script type="module">
+     import { Producto } from "../sections/productos.ts";
+    
+      const urlParams = new URLSearchParams(window.location.search);
+      const idProducto = urlParams.get('id');
+    
+      // Función para buscar un producto por su ID
+      function encontrarProductoPorId(id) {
+        return Producto.find(producto => producto.id);
+      }
+    
+      // Buscar el producto por su ID
+      const producto = encontrarProductoPorId(idProducto);
+    
+      // Mostrar los detalles del producto
+      const detallesProducto = document.getElementById('detalles-producto');
+      if (producto) {
+        const detallesHTML = `
+          <h2 class="text-black">${producto.nombre}</h2>
+          <img  class="w-72" src="${producto.img}" alt="${producto.nombre}">
+          <p>Marca: ${producto.marca}</p>
+          <p>Precio: ${producto.precio}</p>
+        `;
+        detallesProducto.innerHTML = detallesHTML;
+      } else {
+        detallesProducto.innerHTML = '<p>Producto no encontrado</p>';
+      }
+    </script>
+  </main>
+</Layout>
+

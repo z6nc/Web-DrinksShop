@@ -1,12 +1,13 @@
 ---
 import { Producto } from "./productos.ts";
+
 ---
 
 <section class="font-Amatic">
   <h1>Productos</h1>
   <div class="grid lg:grid-cols-6 grid-cols-3 gap-5 max-w-7xl mx-auto">
     {
-      Producto.slice(0, 5).map(({ nombre, img, marca, precio }) => (
+      Producto.slice(0, 5).map(({ id,nombre, img, marca, precio }) => (
         <article class="shadow-xl hover:scale-105 transition rounded-lg p-3  ">
           <img class="" src={img} alt="" />
           <div class="py-3 px-2">
@@ -17,7 +18,8 @@ import { Producto } from "./productos.ts";
             <h3 class="text-lg font-semibold text-[#717171]">S/ {precio}</h3>
 
             <button class="mt-4 w-full border-[1px] h-10 border-black">
-              <a href="">Comprar</a>
+              <a href={`productoDetalle?id=${id}`}>Comprar</a>
+
             </button>
           </div>
         </article>
