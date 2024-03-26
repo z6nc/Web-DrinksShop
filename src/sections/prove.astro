@@ -2,9 +2,7 @@
 import { LogoProductos } from "./proveedores.ts";
 ---
 
-<section
-  class="hidden lg:flex w-auto h-28 items-center justify-center gap-7 mx-6"
->
+<section class="hidden lg:flex w-auto h-28 items-center justify-center gap-7 mx-6 ">
   {
     LogoProductos.map(({ id, logo, url }) => (
       <a
@@ -13,11 +11,31 @@ import { LogoProductos } from "./proveedores.ts";
         rel="noopener noreferrer"
         href={url}
       >
-        {" "}
-        <img class="object-cover " src={logo} alt={id} />
+        <img class="object-cover" src={logo} alt={id} />
       </a>
     ))
   }
 </section>
+<style>
+  .slider-container {
+  animation: slideAnimation 40s linear infinite;
+ 
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+  -100%{
+    transform: translateX(0%);
+
+  }
+}
+
+</style>
+
 
 
