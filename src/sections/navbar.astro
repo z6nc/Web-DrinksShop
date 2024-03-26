@@ -49,6 +49,7 @@
   </div>
   </div>
 </nav>
+
  <!-- Estilos de  titulo Principal -->
 <style>
   .customShadow {
@@ -79,26 +80,11 @@ transition: .3s all ease-in-out;
 
 
 </style>
+
+
 <!-- Script Responsive -->
 <script>
-  const botones = document.querySelectorAll(".split");
-botones.forEach(boton => {
-  boton.addEventListener('click', () => {
-    (document.querySelector(".Menu") as HTMLElement).style.display = "flex";
-
-  });
-});
-
-const Exit = document.querySelector(".Menu span");
-if (Exit) {
-  Exit.addEventListener('click', () => {
-    (document.querySelector(".Menu") as HTMLElement).style.display = "none";
-  });
-}
-</script>
-<script>
- 
-const navbar = document.getElementById('Navbar');
+  const navbar = document.getElementById('Navbar');
 const navbarh2 = document.getElementById('navbarH2');
 
 // Función para cambiar el color de fondo de la barra de navegación al hacer scroll
@@ -117,5 +103,22 @@ window.addEventListener('scroll', () => {
   }
  
 });
+
+  const botones = document.querySelectorAll(".split");
+botones.forEach(boton => {
+  boton.addEventListener('click', () => {
+    (document.querySelector(".Menu") as HTMLElement).style.display = "flex";
+
+  });
+});
+
+const Exit = document.querySelector(".Menu span");
+if (Exit) {
+  Exit.addEventListener('click', () => {
+    (document.querySelector(".Menu") as HTMLElement).style.display = "none";
+  });
+}
+
+ 
 
 </script>
