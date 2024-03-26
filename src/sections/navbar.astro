@@ -1,5 +1,5 @@
 
-<nav class="text-white w-full flex  justify-evenly py-3  items-center  fixed z-30  backdrop-blur-sm  ">
+<nav id="Navbar" class="text-white w-full flex  justify-evenly py-3 lg:h-[120px] items-center  fixed z-30  ">
     <ul class="lg:flex tracking-wide font-light   hidden">
         <a class="p-6 hover:scale-105 transition text-[13px]  border-b-2 border-white " href=""><li>HOME</li></a>
         <a class="p-6 hover:scale-110 transition   text-[13px]  hover:border-b-2 border-white"  href=""><li class="mx-5">PRODUCTOS </li></a>
@@ -9,8 +9,9 @@
     <button class="flex lg:hidden split">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z"/><path d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
- <h2 class="text-[30px] lg:text-[36px] font-Protest text-transparent customShadow  font-black cursor-default uppercase hover:scale-105 transition ">RefrescaShop</h2>
-      <ul class="lg:flex tracking-wide px-5  font-light hidden">
+ <h2 id="navbarH2" class="text-[30px] lg:text-[36px] font-Protest text-transparent customShadow  font-black cursor-default uppercase hover:scale-105 transition ">RefrescaShop</h2>
+      
+     <ul class="lg:flex tracking-wide px-5  font-light hidden">
         <a class="p-6 hover:scale-110 transition  text-[13px] hover:border-b-2 border-white "  href=""><li>ABOUT</li></a>
         <a class=" p-6 hover:scale-110 transition  text-[13px]  hover:border-b-2 border-white " href=""><li>USUARIO</li></a>
         <a  class="p-6   hover:scale-110 transition  text-[13px]  hover:border-b-2 border-white "  href=""><li class="">CARRITO COMPRA</li></a>
@@ -28,7 +29,7 @@
 </nav>
 
 <!-- NavBar Responsive -->
-<nav class="Menu slide-in fixed top-0 left-[-100%] bg-[#ffffff]  slide-in  h-full hidden flex-col  w-[80%] z-50 ">
+<nav class="Menu  slide-in fixed top-0 left-[-100%] bg-[#ffffff]  slide-in  h-full hidden flex-col  w-[80%] z-50 ">
   <div class="py-5 px-6">
     <span class="  text-2xl font-bold text-black">X</span>
   <div class=" flex flex-col  w-auto my-10  ">
@@ -39,7 +40,7 @@
       <a class="border-[#cfcece] border-b-[1px] font-medium  text-[15px] py-4" href="#">INICIA SESSION </a>
   </div>
   <div class="flex flex-col justify-center items-center my-9">
-    <h1 class=" font-Protest text-4xl -skew-y-6">RefrescaShop</h1>
+    <h1 class="  font-Protest text-4xl -skew-y-6">RefrescaShop</h1>
     <div class="flex flex-row my-7 ">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z"/><path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M9 12a3 3 0 1 0 6 0 3 3 0 1 0-6 0M16.5 7.5v.01"/></svg>
       <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z"/><path d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2H7"/></svg>
@@ -65,6 +66,16 @@
   }
 }
 
+.scrolled-navbar{
+background-color: white;
+color: black;
+border-bottom: 1px solid #e9e9eb;
+transition: .3s all ease-in-out;
+}
+.scrolled-h2{
+  color: black;
+}
+
 
 
 </style>
@@ -84,4 +95,27 @@ if (Exit) {
     (document.querySelector(".Menu") as HTMLElement).style.display = "none";
   });
 }
+</script>
+<script>
+ 
+const navbar = document.getElementById('Navbar');
+const navbarh2 = document.getElementById('navbarH2');
+
+// Función para cambiar el color de fondo de la barra de navegación al hacer scroll
+window.addEventListener('scroll', () => {
+  if (navbar && navbarh2 ) {
+    if (window.scrollY > 100) { 
+    navbar.classList.add('scrolled-navbar');
+    navbarh2.classList.add('scrolled-h2');
+
+  } else {
+    navbar.classList.remove('scrolled-navbar');
+    navbarh2.classList.remove('scrolled-h2');
+
+  }
+    
+  }
+ 
+});
+
 </script>
