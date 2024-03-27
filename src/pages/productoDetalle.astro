@@ -15,32 +15,52 @@ import Footer from "../sections/footer.astro";
 
     </div>
     <script type="module">
-     import { Producto } from "../sections/productos.ts";
-    
-      const urlParams = new URLSearchParams(window.location.search);
-      const idProducto = urlParams.get('id');
-    
-      // Función para buscar un producto por su ID
-      function encontrarProductoPorId(id) {
-        return Producto.find(producto => producto.id);
-      }
-    
-      // Buscar el producto por su ID
-      const producto = encontrarProductoPorId(idProducto);
-    
-      // Mostrar los detalles del producto
-      const detallesProducto = document.getElementById('detalles-producto');
-      if (producto) {
-        const detallesHTML = `
-          <h2 class="text-black">${producto.nombre}</h2>
-          <img  class="w-72" src="${producto.img}" alt="${producto.nombre}">
-          <p>Marca: ${producto.marca}</p>
-          <p>Precio: ${producto.precio}</p>
-        `;
-        detallesProducto.innerHTML = detallesHTML;
-      } else {
-        detallesProducto.innerHTML = '<p>Producto no encontrado</p>';
-      }
+    document.addEventListener('DOMContentLoaded', function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const idProducto = urlParams.get('id');
+
+    // Supongamos que tienes un arreglo de objetos 'productos'
+    const productos = [
+    {
+    id: 1,
+    nombre: "Gaseosa Inka Cola 1.5L",
+    tamaño: "1.5L",
+    img: "https://plazavea.vteximg.com.br/arquivos/ids/19996016-450-450/20038203.jpg?v=638017642861700000",
+    marca: "Coca Cola",
+    precio: "12.00",
+    categoria: "Gaseosa",
+    tipo: "unidad",
+  },
+        { id: 2, nombre: 'Producto 2', descripcion: 'Descripción del Producto 2', precio: 19.99 },
+        // Otros productos...
+    ];
+
+    // Función para encontrar el producto por su ID
+    function encontrarProductoPorId(id) {
+        return productos.find(producto => producto.id === parseInt(id));
+    }
+
+    // Función para mostrar los detalles del producto
+    function mostrarDetallesProducto(producto) {
+        const detallesProducto = document.getElementById('detalles-producto');
+        if (producto) {
+            const detallesHTML = `
+                <h2 class="text-black">${producto.nombre}</h2>
+                <img src="${producto.img}" alt="${producto.nombre}" />
+                <p>${producto.descripcion}</p>
+                <p>Precio: $${producto.precio}</p>
+            `;
+            detallesProducto.innerHTML = detallesHTML;
+        } else {
+            detallesProducto.innerHTML = '<p>Producto no encontrado</p>';
+        }
+    }
+
+    // Llamada a las funciones para encontrar y mostrar el producto con el ID especificado
+    const productoEncontrado = encontrarProductoPorId(idProducto);
+    mostrarDetallesProducto(productoEncontrado);
+});
+
     </script>
   </main>
 </Layout>
