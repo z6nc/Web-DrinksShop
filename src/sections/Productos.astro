@@ -7,7 +7,7 @@ import { Producto } from "./productos.ts";
   <h1>Productos</h1>
   <div class="grid lg:grid-cols-6 grid-cols-3 gap-5 max-w-7xl mx-auto">
     {
-      Producto.slice(0, 5).map(({ id,nombre, img, marca, precio }) => (
+      Producto.slice(0, 4).map(({ id,nombre, img, marca, precio }) => (
         <article class="shadow-xl hover:scale-105 transition rounded-lg p-3  ">
           <img class="" src={img} alt="" />
           <div class="py-3 px-2">
