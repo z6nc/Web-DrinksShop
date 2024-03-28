@@ -3,7 +3,10 @@ export const Producto = [
     id: 1,
     nombre: "Gaseosa Inka Cola 1.5L",
     tamaño: "1.5L",
-    img: "https://plazavea.vteximg.com.br/arquivos/ids/19996016-450-450/20038203.jpg?v=638017642861700000",
+    img:"https://plazavea.vteximg.com.br/arquivos/ids/19996016-450-450/20038203.jpg?v=638017642861700000",
+    img2:"https://plazavea.vteximg.com.br/arquivos/ids/19996016-450-450/20038203.jpg?v=638017642861700000",
+    img3:"https://plazavea.vteximg.com.br/arquivos/ids/19996016-450-450/20038203.jpg?v=638017642861700000",
+    descripcion: "Inka Cola es una gaseosa de color amarillo dorado, con un sabor dulce y un aroma a hierbas. Es una bebida muy popular en Perú y es conocida por su sabor único.",
     marca: "Coca Cola",
     precio: "12.00",
     categoria: "Gaseosa",
@@ -240,3 +243,5 @@ export const Producto = [
     tipo: "paquete",
   },
 ];
+
+

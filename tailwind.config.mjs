@@ -6,6 +6,8 @@ export default {
 			fontFamily: {
 				'Nunito': ['Nunito Sans', 'sans-serif'],
 				'Protest': ['Protest Strike', 'sans-serif'],
+				'Archivo': ['Archivo', 'sans-serif'],
+
 			  },
 			 
 

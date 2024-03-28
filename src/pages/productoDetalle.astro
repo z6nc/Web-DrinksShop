@@ -1,7 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../sections/navbar.astro";
+import Detalle from "../sections/Detalle.astro";
 import Footer from "../sections/footer.astro";
+import DemoDetalle from "../sections/demoDetalle.astro";
 
 ---
 
@@ -10,58 +12,11 @@ import Footer from "../sections/footer.astro";
   <header>
     <Navbar />
   </header>
-  <main class="bg-yellow-200  ">
-    <div id="detalles-producto">
-
-    </div>
-    <script type="module">
-    document.addEventListener('DOMContentLoaded', function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const idProducto = urlParams.get('id');
-
-    // Supongamos que tienes un arreglo de objetos 'productos'
-    const productos = [
-    {
-    id: 1,
-    nombre: "Gaseosa Inka Cola 1.5L",
-    tamaño: "1.5L",
-    img: "https://plazavea.vteximg.com.br/arquivos/ids/19996016-450-450/20038203.jpg?v=638017642861700000",
-    marca: "Coca Cola",
-    precio: "12.00",
-    categoria: "Gaseosa",
-    tipo: "unidad",
-  },
-        { id: 2, nombre: 'Producto 2', descripcion: 'Descripción del Producto 2', precio: 19.99 },
-        // Otros productos...
-    ];
-
-    // Función para encontrar el producto por su ID
-    function encontrarProductoPorId(id) {
-        return productos.find(producto => producto.id === parseInt(id));
-    }
-
-    // Función para mostrar los detalles del producto
-    function mostrarDetallesProducto(producto) {
-        const detallesProducto = document.getElementById('detalles-producto');
-        if (producto) {
-            const detallesHTML = `
-                <h2 class="text-black">${producto.nombre}</h2>
-                <img src="${producto.img}" alt="${producto.nombre}" />
-                <p>${producto.descripcion}</p>
-                <p>Precio: $${producto.precio}</p>
-            `;
-            detallesProducto.innerHTML = detallesHTML;
-        } else {
-            detallesProducto.innerHTML = '<p>Producto no encontrado</p>';
-        }
-    }
-
-    // Llamada a las funciones para encontrar y mostrar el producto con el ID especificado
-    const productoEncontrado = encontrarProductoPorId(idProducto);
-    mostrarDetallesProducto(productoEncontrado);
-});
-
-    </script>
+  <main>
+   <DemoDetalle />    
   </main>
+  <footer>
+    <!-- <Footer /> -->
+  </footer>
 </Layout>
 
