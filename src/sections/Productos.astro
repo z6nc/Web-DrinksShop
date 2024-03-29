@@ -3,7 +3,7 @@ import { Producto } from "./productos.ts";
 
 ---
 
-<section class="font-Amatic">
+<section class="font-Amatic mb-4" >
   <h1>Productos</h1>
   <div class="grid lg:grid-cols-6 grid-cols-3 gap-5 max-w-7xl mx-auto">
     {
@@ -17,7 +17,7 @@ import { Producto } from "./productos.ts";
             <h4 class="text-base font-extralight ">{nombre}</h4>
             <h3 class="text-lg font-semibold text-[#717171]">S/ {precio}</h3>
 
-            <button class="mt-4 w-full border-[1px] h-10 border-black">
+            <button class="mt-4 w-full border-[1px] h-10 border-black font-Protest hover:bg-red-600 hover:text-white transition hover:border-none">
               <a href={`productoDetalle?id=${id}`}>Comprar</a>
 
             </button>
@@ -25,8 +25,8 @@ import { Producto } from "./productos.ts";
         </article>
       ))
     }
-    <article class="shadow-xl hover:scale-105 flex flex-col justify-center items-center transition rounded-lg p-3">
-      <h2 class="text-lg font-black cursor-default">Ver catalogo</h2>
+    <article class="shadow-xl hover:scale-105 flex flex-col justify-center items-center transition rounded-lg p-3 bg-cover bg-no-repeat brightness-50" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1a/Soft_drink_shelf_2.jpg');">
+      <h2 class="text-lg font-black cursor-default text-white">Ver catalogo</h2>
      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class=" hover:text-red-600  icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z"/><path d="M5 12h14m-6 6 6-6m-6-6 6 6"/></svg></a> 
     </article>
   </div>
