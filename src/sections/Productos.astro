@@ -5,20 +5,20 @@ import { Producto } from "./productos.ts";
 
 <section class="font-Amatic mb-4" >
   <h1>Productos</h1>
-  <div class="grid lg:grid-cols-6 grid-cols-3 gap-5 max-w-7xl mx-auto">
+  <div class="grid lg:grid-cols-6 grid-cols-3 gap-5 lg:max-w-7xl mx-auto">
     {
       Producto.slice(0, 5).map(({ id,nombre, img, marca, precio }) => (
-        <article class="shadow-xl hover:scale-105 transition rounded-lg p-3  ">
-          <img class="" src={img} alt="" />
-          <div class="py-3 px-2">
-            <p class="text-[#767676] tracking-wider text-[11px] uppercase">
+        <article class="shadow-xl rounded-lg p-3  ">
+          <img class="hover:scale-110 transition  duration-500" src={img} alt="" />
+          <div class="lg:py-3 lg:px-2">
+            <p class="text-[#767676] lg:tracking-wider lg:text-[11px] text-[8px] uppercase">
               {marca}
             </p>
-            <h4 class="text-base font-extralight ">{nombre}</h4>
-            <h3 class="text-lg font-semibold text-[#717171]">S/ {precio}</h3>
+            <h4 class="lg:text-base  text-[12px] font-extralight ">{nombre}</h4>
+            <h3 class="text-sm lg:text-lg font-semibold text-[#717171]">S/ {precio}</h3>
 
-            <button class="mt-4 w-full border-[1px] h-10 border-black font-Protest hover:bg-red-600 hover:text-white transition hover:border-none">
-              <a href={`productoDetalle?id=${id}`}>Comprar</a>
+            <button class="mt-4 w-full border-[1px] lg:h-10 border-black font-Protest hover:bg-red-600 hover:text-white transition hover:border-none">
+              <a class="text-sm" href={`productoDetalle?id=${id}`}>Comprar</a>
 
             </button>
           </div>
