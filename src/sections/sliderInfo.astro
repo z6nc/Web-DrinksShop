@@ -1,12 +1,33 @@
-<section>
-<div>
-  <h2>Forma seguro de pagar</h2>
+---
+const StyleH2="text-[#4b4b4b] pt-6 pb-1 text-xl font-Protest";
+const StyleP="text-[#737373] text-[15px]";
+const divStyle="flex flex-col justify-center items-center text-center p-16 border-[#e9e9e9] border-2 rounded-lg hover:scale-105 transition-transform cursor-default";
+
+---
+
+<section class="grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-6 my-6">
+<div class={divStyle}>
+  <img src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/ecosystem/payment.svg" alt="">
+  <h2 class={StyleH2}>Forma seguro de pagar</h2>
+  <p class={StyleP}>
+    Paga con tarjeta de credito, debito, efectivo, transferencia bancaria, entre otros.
+  </p>
 </div>
-<div>
-    <h2>Entrega Segura y Rapida</h2>
+
+<div class={divStyle}>
+  <img src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/ecosystem/shipping.svg" alt="">
+    <h2 class={StyleH2}>Entrega Segura y Rapida</h2>
+    <p class={StyleP}>
+      Recibe tu producto en la puerta de tu casa en el menor tiempo posible.
+    </p>
 </div>
-<div>
-    <h2>Excelente calidad de productos</h2>
+
+<div class={divStyle}>
+  <img src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/ecosystem/protected.svg" alt="">
+    <h2 class={StyleH2}>Excelente calidad de productos</h2>
+    <p class={StyleP}>
+      Todos nuestros productos son de la mejor calidad y garantizados.
+    </p>
 </div>
 
 
