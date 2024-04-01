@@ -2,12 +2,12 @@
 import { LogoProductos } from "./proveedores.ts";
 ---
 
-<section class="hidden lg:flex w-auto h-28 items-center justify-center gap-7 mx-6 ">
+<section class="hidden lg:flex w-auto h-28 items-center justify-center gap-7 mx-6  ">
   {
     LogoProductos.map(({ id, logo, url }) => (
       <a
         target="_blank"
-        class="w-[6%] hover:scale-110 transition cursor-pointer"
+        class="w-[6%] hover:scale-110 transition cursor-pointer  "
         rel="noopener noreferrer"
         href={url}
       >
@@ -18,21 +18,16 @@ import { LogoProductos } from "./proveedores.ts";
 </section>
 <style>
   .slider-container {
-  animation: slideAnimation 40s linear infinite;
+  animation: slideAnimation 4s linear infinite;
  
 }
 
 @keyframes slideAnimation {
-  0% {
-    transform: translateX(0%);
-  }
+  
   100% {
-    transform: translateX(-100%);
+    transform: scale(1.2);
   }
-  -100%{
-    transform: translateX(0%);
-
-  }
+ 
 }
 
 </style>

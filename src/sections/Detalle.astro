@@ -1,4 +1,4 @@
-<div id="detalles-producto" class="">
+<div id="detalles-producto" >
 
 </div>
 
@@ -285,7 +285,7 @@
         function mostrarDetallesProducto(producto) {
             const detallesProducto = document.getElementById('detalles-producto');
             if (producto) {
-                const detallesHTML = ` <div class="w-auto pt-[40px]  ">
+                const detallesHTML = ` <div class="w-auto pt-[32px]  ">
     <article class= "flex flex-col lg:flex-row py-16 lg:py-32 justify-center  gap-8">
        <div class="lg:flex flex-col gap-5 hidden ">        
         <img class="w-24 hover:scale-105 transition rounded-md  border-black border-[1px] p-2" src= "${producto.img}" alt="">
@@ -298,7 +298,7 @@
          <div class="flex flex-col py-9 text-center lg:text-start gap-8  ">
             <div class="border-b-2 border-[#e9e9e9]">
                 <h2 class=" font-Protest lg:max-w-72   text-2xl tracking-wide uppercase lg:text-3xl">${producto.nombre}</h2>
-                <p class="font-light tracking-wide text-lg text-gray-400">${producto.marca}</p>
+                <p class="font-light tracking-wide text-lg text-gray-400 ">${producto.marca}</p>
                 <h3 class="text-2xl mb-4">$${producto.precio}</h3>
             </div>
             <button class="py-2 px-6 border-black border-[1px] mx-7 lg:mx-0 font-Protest hover:bg-red-600 text-lg uppercase hover:text-white hover:border-red-900 transition hover:scale-105">Añadir al carrito</button>
