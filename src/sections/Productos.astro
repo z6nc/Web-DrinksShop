@@ -4,7 +4,7 @@ import { Producto } from "./productos.ts";
 ---
 
 <section class="font-Amatic mb-4" >
-  <h1>Productos</h1>
+  <h1 class="font-Protest text-2xl pl-3">Nuestros Productos</h1>
   <div class="grid lg:grid-cols-6 grid-cols-3 gap-5 lg:max-w-7xl mx-auto">
     {
       Producto.slice(0, 5).map(({ id,nombre, img, marca, precio }) => (
