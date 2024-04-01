@@ -5,11 +5,11 @@ import { Producto } from "./productos.ts";
 
 <section class="font-Amatic mb-4" >
   <h1 class="font-Protest text-2xl pl-3">Nuestros Productos</h1>
-  <div class="grid lg:grid-cols-6 grid-cols-3 gap-5 lg:max-w-7xl mx-auto">
+  <div class="grid lg:grid-cols-6 grid-cols-3 gap-5 lg:max-w-7xl mx-auto ">
     {
       Producto.slice(0, 5).map(({ id,nombre, img, marca, precio }) => (
-        <article class="shadow-xl rounded-lg p-3  ">
-          <img class="hover:scale-110 transition  duration-500" src={img} alt="" />
+        <article class="shadow-xl rounded-lg p-3 hover:scale-105 transition  duration-200 ">
+          <img class="" src={img} alt="" />
           <div class="lg:py-3 lg:px-2">
             <p class="text-[#767676] lg:tracking-wider lg:text-[11px] text-[8px] uppercase">
               {marca}
