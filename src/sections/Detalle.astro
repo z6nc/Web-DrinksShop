@@ -15,6 +15,8 @@
         nombre: "Gaseosa Inka Cola 1.5L",
         tamaño: "1.5L",
         img: "https://plazavea.vteximg.com.br/arquivos/ids/19996016-450-450/20038203.jpg?v=638017642861700000",
+        img2:"https://realplaza.vtexassets.com/arquivos/ids/15908651/image-5f9d82ca023c46349740ff629e7a77bf.jpg?v=637481308937330000",
+        img3:"https://micocacola.vtexassets.com/arquivos/ids/195684-800-auto?v=638296123233270000&width=800&height=auto&aspect=true",
         descripcion: "Inka Cola es una gaseosa de color amarillo dorado, con un sabor dulce y un aroma a hierbas. Es una bebida muy popular en Perú y es conocida por su sabor único.",
         marca: "Coca Cola",
         precio: "12.00",
@@ -285,21 +287,25 @@
         function mostrarDetallesProducto(producto) {
             const detallesProducto = document.getElementById('detalles-producto');
             if (producto) {
-                const detallesHTML = ` <div class="w-auto pt-[32px]  ">
+                const detallesHTML = ` <div class="w-auto pt-[32px] animate-fade-in-down ">
     <article class= "flex flex-col lg:flex-row py-16 lg:py-32 justify-center  gap-8">
        <div class="lg:flex flex-col gap-5 hidden ">        
         <img class="w-24 hover:scale-105 transition rounded-md  border-black border-[1px] p-2" src= "${producto.img}" alt="">
-        <img class="w-24 hover:scale-105 transition rounded-md active:border-black border-[1px] p-2 " src= "${producto.img}" alt="">
-        <img class="w-24 hover:scale-105 transition rounded-md active:border-black border-[1px] p-2 " src= "${producto.img}" alt="">
+        <img class="w-24 hover:scale-105 transition rounded-md active:border-black border-[1px] p-2 " src= "${producto.img2}" alt="">
+        <img class="w-24 hover:scale-105 transition rounded-md active:border-black border-[1px] p-2 " src= "${producto.img3}" alt="">
        </div>
          <div class="w-full    lg:w-[45%] ">
            <img class=" p-2" src= "${producto.img}" alt="">
+           <img class="w-[50%] p-2" src= "${producto.img2}" alt="">
+           <img class=" w-[50%] p-2" src= "${producto.img3}" alt="">
+
+
          </div>
          <div class="flex flex-col py-9 text-center lg:text-start gap-8  ">
             <div class="border-b-2 border-[#e9e9e9]">
                 <h2 class=" font-Protest lg:max-w-72   text-2xl tracking-wide uppercase lg:text-3xl">${producto.nombre}</h2>
                 <p class="font-light tracking-wide text-lg text-gray-400 ">${producto.marca}</p>
-                <h3 class="text-2xl mb-4">$${producto.precio}</h3>
+                <h3 class="text-2xl mb-4">S/${producto.precio}</h3>
             </div>
             <button class="py-2 px-6 border-black border-[1px] mx-7 lg:mx-0 font-Protest hover:bg-red-600 text-lg uppercase hover:text-white hover:border-red-900 transition hover:scale-105">Añadir al carrito</button>
              <div class="flex flex-col gap-9">
