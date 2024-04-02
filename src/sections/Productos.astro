@@ -33,7 +33,7 @@ import { Producto } from "./productos.ts";
 </section>
 <script>
   const Articulos = document.querySelectorAll('#articulo');
-  const delay = 500; 
+  const delay = 300; 
   
   window.addEventListener('scroll', () => {
     if (Articulos.length > 0) {
@@ -41,7 +41,7 @@ import { Producto } from "./productos.ts";
         const delayForArticle = index * delay;
         setTimeout(() => {
           if (window.scrollY >= 345) { 
-            Articulo.classList.add('animate-fade-in-down');
+            Articulo.classList.add('animate-fade-in-up');
             Articulo.classList.remove('hidden');
           } 
         }, delayForArticle);

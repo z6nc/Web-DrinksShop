@@ -1,4 +1,4 @@
-<div id="detalles-producto" >
+<div id="detalles-producto"  >
 
 </div>
 
@@ -287,19 +287,17 @@
         function mostrarDetallesProducto(producto) {
             const detallesProducto = document.getElementById('detalles-producto');
             if (producto) {
-                const detallesHTML = ` <div class="w-auto pt-[32px] animate-fade-in-down ">
+                const detallesHTML = ` <div class="w-auto pt-[32px]  ">
     <article class= "flex flex-col lg:flex-row py-16 lg:py-32 justify-center  gap-8">
        <div class="lg:flex flex-col gap-5 hidden ">        
         <img class="w-24 hover:scale-105 transition rounded-md  border-black border-[1px] p-2" src= "${producto.img}" alt="">
         <img class="w-24 hover:scale-105 transition rounded-md active:border-black border-[1px] p-2 " src= "${producto.img2}" alt="">
         <img class="w-24 hover:scale-105 transition rounded-md active:border-black border-[1px] p-2 " src= "${producto.img3}" alt="">
        </div>
-         <div class="w-full    lg:w-[45%] ">
+         <div class="w-full flex  flex-col justify-center items-center  animate-fade-in-up   lg:w-[45%] ">
            <img class=" p-2" src= "${producto.img}" alt="">
-           <img class="w-[50%] p-2" src= "${producto.img2}" alt="">
-           <img class=" w-[50%] p-2" src= "${producto.img3}" alt="">
-
-
+           <img class="w-[60%] p-2 hidden lg:flex"  " src= "${producto.img3}" alt="">
+           <img class=" w-[50%] p-2 hidden lg:flex" " src= "${producto.img2}" alt="">
          </div>
          <div class="flex flex-col py-9 text-center lg:text-start gap-8  ">
             <div class="border-b-2 border-[#e9e9e9]">
