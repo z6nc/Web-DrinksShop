@@ -5,7 +5,7 @@ import { Producto } from "./productos.ts";
 
 <section class="font-Amatic mb-4" >
   <h1 class="font-Protest text-2xl pl-3">Nuestros Productos</h1>
-  <div id="art" class="grid lg:grid-cols-6 grid-cols-3 gap-5 lg:max-w-7xl mx-auto ">
+  <div id="art" class="grid lg:grid-cols-6 grid-cols-2 gap-5 lg:max-w-7xl mx-auto ">
     {
       Producto.slice(0, 5).map(({ id,nombre, img, marca, precio }) => (
         <article id="articulo" class=" hidden shadow-xl rounded-lg p-3 hover:scale-105 transition   duration-200 ">
@@ -25,7 +25,7 @@ import { Producto } from "./productos.ts";
         </article>
       ))
     }
-    <article class="shadow-xl flex flex-col justify-center items-center  rounded-lg p-3 ">
+    <article class="shadow-xl flex flex-col  justify-center items-center  rounded-lg p-3 ">
       <h2 class="text-lg">Ver catalogo</h2>
      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class=" icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z"/><path d="M5 12h14m-6 6 6-6m-6-6 6 6"/></svg></a> 
     </article>
@@ -33,7 +33,7 @@ import { Producto } from "./productos.ts";
 </section>
 <script>
   const Articulos = document.querySelectorAll('#articulo');
-  const delay = 300; 
+  const delay = 360; 
   
   window.addEventListener('scroll', () => {
     if (Articulos.length > 0) {
@@ -41,7 +41,7 @@ import { Producto } from "./productos.ts";
         const delayForArticle = index * delay;
         setTimeout(() => {
           if (window.scrollY >= 345) { 
-            Articulo.classList.add('animate-fade-in-up');
+            Articulo.classList.add('lg:animate-fade-in-up');
             Articulo.classList.remove('hidden');
           } 
         }, delayForArticle);
