@@ -242,6 +242,20 @@ export const Producto = [
     categoria: "bebida",
     tipo: "paquete",
   },
-];
+  {
+    id: 25,
+    nombre: "Agua Sin Gas Cielo Pack 6 Unidades de 625 ml ",
+    tamaño: "625ml",
+    img: "https://wongfood.vtexassets.com/arquivos/ids/658297-800-auto?v=638307417765670000&width=800&height=auto&aspect=true",
+    marca: "Cielo",
+    precio: "6.90 ",
+    categoria: "agua",
+    tipo: "paquete",
+  },
+
+]
+
+
+
 
 
