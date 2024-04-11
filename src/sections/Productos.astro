@@ -4,31 +4,27 @@ import { Producto } from "./productos.ts";
 ---
 
 <section class="font-Amatic mb-4" >
-  <h1 class="font-Protest text-2xl pl-3">Nuestros Productos</h1>
+  <h1 class="font-Protest text-3xl pl-3 py-4  lg:py-2 text-center lg:text-start uppercase">Nuestros Productos</h1>
   <div id="art" class="grid lg:grid-cols-6 grid-cols-2 gap-5 lg:max-w-7xl mx-auto ">
     {
-      Producto.slice(0, 5).map(({ id,nombre, img, marca, precio }) => (
+      Producto.slice(0, 6).map(({ id,nombre, img, marca, precio }) => (
         <article id="articulo" class=" hidden  rounded-lg p-3 hover:scale-105 transition   duration-200 ">
           <img class="" src={img} alt="" />
           <div class="lg:py-3 lg:px-2">
             <p class="text-[#767676] lg:tracking-wider lg:text-[11px] text-[10px] uppercase">
               {marca}
             </p>
-            <h4 class="lg:text-base  text-[15px] font-extralight ">{nombre}</h4>
+            <h4 class="lg:text-base   text-[16px] font-extralight ">{nombre}</h4>
             <h3 class="text-base lg:text-lg font-semibold text-[#717171]">S/ {precio}</h3>
 
-            <button class="mt-4 py-2 lg:py-0 w-full border-[1px] lg:h-10 border-black font-Protest hover:bg-red-600 hover:text-white transition hover:border-none">
-              <a class="text-base" href={`productoDetalle?id=${id}`}>Comprar</a>
+            <button class="mt-4 py-1  lg:py-0 w-full border-[1px] lg:h-10 border-black font-Protest hover:bg-red-600 hover:text-white transition hover:border-none">
+              <a class="lg:text-base text-[15px]" href={`productoDetalle?id=${id}`}>Comprar</a>
 
             </button>
           </div>
         </article>
       ))
     }
-    <article class="shadow-xl flex flex-col  justify-center items-center  rounded-lg p-3 ">
-      <h2 class="text-lg">Ver catalogo</h2>
-     <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class=" icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z"/><path d="M5 12h14m-6 6 6-6m-6-6 6 6"/></svg></a> 
-    </article>
   </div>
 </section>
 <script>
