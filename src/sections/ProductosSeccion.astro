@@ -1,8 +1,29 @@
 ---
+import { Producto } from "./productos.ts";
 
 ---
 <section>
-
-
+ <h2>productos</h2>
+ <div>
+    {
+        Producto.map(({ id,nombre, img, marca, precio }) => (
+          <article id="articulo" class=" hidden  rounded-lg p-3 hover:scale-105 transition   duration-200 ">
+            <img class="" src={img} alt="" />
+            <div class="lg:py-3 lg:px-2">
+              <p class="text-[#767676] lg:tracking-wider lg:text-[11px] text-[10px] uppercase">
+                {marca}
+              </p>
+              <h4 class="lg:text-base   text-[16px] font-extralight ">{nombre}</h4>
+              <h3 class="text-base lg:text-lg font-semibold text-[#717171]">S/ {precio}</h3>
+  
+              <button class="mt-4 py-1  lg:py-0 w-full border-[1px] lg:h-10 border-black font-Protest hover:bg-red-600 hover:text-white transition hover:border-none">
+                <a class="lg:text-base text-[15px]" href={`productoDetalle?id=${id}`}>Comprar</a>
+  
+              </button>
+            </div>
+          </article>
+        ))
+      }
+ </div>
 
 </section>
