@@ -1,16 +1,32 @@
 ---
+import Productos from "./Productos.astro";
 import { Producto } from "./productos.ts";
 
 ---
 <aside class="bg-red-600  p-4 lg:h-screen border-b-1  border-b-gray-300 border-[1px] h-16">
     <div class="w-full flex justify-between">
-        <h2 class="text-xl">Filtro</h2>
+        <h2 class="text-lg font-bold">Filtro</h2>
        <button id="btn">
         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-adjustments-alt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8h4v4h-4z" /><path d="M6 4l0 4" /><path d="M6 12l0 8" /><path d="M10 14h4v4h-4z" /><path d="M12 4l0 10" /><path d="M12 18l0 2" /><path d="M16 5h4v4h-4z" /><path d="M18 4l0 1" /><path d="M18 9l0 11" /></svg>
         </button> 
     </div>
+    
 
-</aside>
+<nav class="Menu  slide-in fixed inset-0  bg-[#ffffff] h-full   w-full z-50 ">
+    <div class="w-full flex justify-end">
+        <span class="text-black p-3 text-2xl font-black ">X</span>
+    </div>
+    <div class=" ">
+        <form class="border-b-gray-300 border-[1px] " action="/buscar" method="get">
+            <input class="py-3 font-Protest  px-16 m-3" type="text" name="" placeholder="Buscar...">
+            <button type="submit"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg></button>
+          </form>
+
+    </div>
+       
+  </nav>
+
+
 
 <script>
     let buttomFilter=document.querySelector('#btn');
