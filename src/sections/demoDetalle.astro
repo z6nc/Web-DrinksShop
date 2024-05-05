@@ -4,7 +4,7 @@ const productosRandom = [...Producto].sort(() => Math.random() - 0.5);
 ---
 <section class="lg:max-w-7xl mx-auto">
     <h2 class="font-Protest text-3xl uppercase text-center  pb-5">Bebidas que te pueden gustar</h2>
-    <article class="grid lg:grid-cols-6 grid-cols-3 gap-5  ">
+    <article class="grid lg:grid-cols-6 grid-cols-2 gap-5  ">
         {
             productosRandom.slice(0,6).map(producto => (
                 <div class="  shadow-xl rounded-lg p-3 hover:scale-105 transition   duration-200">

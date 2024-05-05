@@ -2,12 +2,11 @@
 import { Producto } from "./productos.ts";
 
 ---
-<section>
- <h2>productos</h2>
- <div>
+<section class="lg:p-7 bg-slate-700">
+ <div class="grid lg:grid-cols-5 grid-cols-3">
     {
         Producto.map(({ id,nombre, img, marca, precio }) => (
-          <article id="articulo" class=" hidden  rounded-lg p-3 hover:scale-105 transition   duration-200 ">
+          <article id="articulo" class="  rounded-lg p-3 hover:scale-105 transition   duration-200 ">
             <img class="" src={img} alt="" />
             <div class="lg:py-3 lg:px-2">
               <p class="text-[#767676] lg:tracking-wider lg:text-[11px] text-[10px] uppercase">

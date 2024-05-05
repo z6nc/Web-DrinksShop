@@ -2,19 +2,22 @@
 import { Producto } from "./productos.ts";
 
 ---
-<aside class="w-screen md:w-1/4 bg-gray-200 p-4">
-<h2>Filtro</h2>
-<div>
-    <label for="categoria">Categoria
-        
-   
+<aside class="bg-red-600  p-4 lg:h-screen border-b-1  border-b-gray-300 border-[1px] h-16">
+    <div class="w-full flex justify-between">
+        <h2 class="text-xl">Filtro</h2>
+       <button id="btn">
+        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-adjustments-alt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8h4v4h-4z" /><path d="M6 4l0 4" /><path d="M6 12l0 8" /><path d="M10 14h4v4h-4z" /><path d="M12 4l0 10" /><path d="M12 18l0 2" /><path d="M16 5h4v4h-4z" /><path d="M18 4l0 1" /><path d="M18 9l0 11" /></svg>
+        </button> 
+    </div>
 
-        
-    </label>
-     
-     
-    
-        
-</div>
-    
 </aside>
+
+<script>
+    let buttomFilter=document.querySelector('#btn');
+    if(buttomFilter){
+        buttomFilter.addEventListener('click',()=>{
+        alert('hola')
+    })
+    }
+   
+</script>
