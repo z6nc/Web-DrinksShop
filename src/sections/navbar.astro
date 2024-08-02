@@ -1,21 +1,42 @@
+---
+// NavBar
+const Stylelinks="p-6 transition text-[13px]  border-b-2 border-transparent hover:border-white ";
+---
 
 <nav id="Navbar" class="text-white w-full flex  justify-evenly py-3 lg:h-[115px] items-center  fixed z-30  ">
     <ul class="lg:flex tracking-wide font-light   hidden">
-        <a class="p-6 scale-105 transition text-[13px]  border-b-2 border-white " href="/"><li>HOME</li></a>
-        <a class="p-6 hover:scale-110 transition   text-[13px]  hover:border-b-2 border-white"  href="/productosCompletos"><li class="mx-5">PRODUCTOS </li></a>
-        <a class="p-6 hover:scale-110 transition  text-[13px]  hover:border-b-2 border-white  " href=""><li >CATEGORIA </li></a>
+      <li>
+        <a class={Stylelinks} href="/">HOME</a>
+
+      </li>
+      <li class="mx-4">
+        <a class={Stylelinks}  href="/productosCompletos">PRODUCTOS </a>
+
+      </li>
+      <li>
+        <a class={Stylelinks} href="">CATEGORIA </a>
+
+      </li>
 
     </ul>
+
+ <!-- Boton responsive navbar -->
     <button class="flex lg:hidden split">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z"/><path d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
  <h2 id="navbarH2" class="text-[30px] lg:text-[36px] font-Protest text-transparent customShadow  font-black cursor-default uppercase hover:scale-105 transition ">RefrescaShop</h2>
       
-     <ul class="lg:flex tracking-wide px-5  font-light hidden">
-        <a class="p-6 hover:scale-110 transition  text-[13px] hover:border-b-2 border-white "  href=""><li>ABOUT</li></a>
-        <a class=" p-6 hover:scale-110 transition  text-[13px]  hover:border-b-2 border-white " href=""><li>USUARIO</li></a>
-        <a  class="p-6   hover:scale-110 transition  text-[13px]  hover:border-b-2 border-white "  href=""><li class="">CARRITO COMPRA</li></a>
 
+     <ul class="lg:flex tracking-wide px-5  font-light hidden">
+        <li>
+          <a class={Stylelinks} href="">ABOUT</a>
+        </li>
+        <li>
+          <a class={Stylelinks} href="">USUARIO</a>
+        </li>
+        <li>
+          <a class={Stylelinks} href="">CARRITO COMPRA</a>
+        </li>
       </ul>
       <div class="flex gap-3 lg:hidden">
         <button>
@@ -76,8 +97,6 @@ transition: .3s all ease-in-out;
 .scrolled-h2{
   color: black;
 }
-
-
 
 </style>
 
