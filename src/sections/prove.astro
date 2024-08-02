@@ -2,7 +2,7 @@
 import { LogoProductos } from "./proveedores.ts";
 ---
 
-<section class="hidden lg:flex w-auto h-28 items-center justify-center gap-7 mx-6  ">
+<section class="hidden  bg-white lg:flex w-auto h-28 items-center justify-center gap-7 mx-6  lg:my-8 ">
   {
     LogoProductos.map(({ id, logo, url }) => (
       <a
@@ -16,21 +16,7 @@ import { LogoProductos } from "./proveedores.ts";
     ))
   }
 </section>
-<style>
-  .slider-container {
-  animation: slideAnimation 4s linear infinite;
- 
-}
 
-@keyframes slideAnimation {
-  
-  100% {
-    transform: scale(1.2);
-  }
- 
-}
-
-</style>
 
 
 
