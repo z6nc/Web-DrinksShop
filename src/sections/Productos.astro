@@ -8,8 +8,8 @@ import { Producto } from "./productos.ts";
   <div id="art" class="grid lg:grid-cols-6 grid-cols-2 gap-5 lg:max-w-7xl mx-auto ">
     {
       Producto.slice(0, 6).map(({ id,nombre, img, marca, precio }) => (
-        <article id="articulo" class=" hidden  rounded-lg p-3 hover:scale-105 transition   duration-200 ">
-          <img class="" src={img} alt="" />
+        <article id="articulo" class=" hidden  rounded-lg p-3 overflow-hidden  w-full">
+          <img class=" object-cover hover:scale-105  trasition duration-400 ease-in-out" src={img} alt="" />
           <div class="lg:py-3 lg:px-2">
             <p class="text-[#767676] lg:tracking-wider lg:text-[11px] text-[10px] uppercase">
               {marca}
