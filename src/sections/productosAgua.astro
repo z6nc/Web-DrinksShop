@@ -23,6 +23,24 @@ import { Producto } from "./productos.ts";
   ))}
   </div>
 </section>
+<style>
+  #articulo:hover img{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out; 
+
+  }
+  #articulo:hover button{
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    transition: all 0.5s ease-in-out; 
+  }
+  #articulo:hover p{
+    color: #f00;
+  }
+
+  
+</style>
 <script>
   const Articulos = document.querySelectorAll('#articulo');
   const delay = 360; 
