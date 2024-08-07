@@ -1,17 +1,50 @@
 ---
 import { Producto } from "./productos.ts";
 import { recuperarCategorias } from "./categoria.js";
-
 ---
-<aside class="bg-red-600  p-4 lg:h-screen border-b-1  sticky top-0 border-b-gray-300 border-[1px] h-16">
-    <div class="w-full flex justify-between">
-        <h2 class="text-lg font-bold">Filtro</h2>
-       <button id="btnFilterOpen">
+<aside class=" bg-white mx-2 rounded-lg  lg:h-screen border-b-1  sticky top-0 border-r-[#f00] border-r-[7px] h-16">
+    <div class="w-full flex justify-between bg-white lg:bg-[#f00]">
+        <h2 class="text-lg font-bold lg:text-white ">Filtro</h2>
+        <!-- Boton abrir filtro responsive  -->
+       <button id="btnFilterOpen" class="lg:hidden">
         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-adjustments-alt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8h4v4h-4z" /><path d="M6 4l0 4" /><path d="M6 12l0 8" /><path d="M10 14h4v4h-4z" /><path d="M12 4l0 10" /><path d="M12 18l0 2" /><path d="M16 5h4v4h-4z" /><path d="M18 4l0 1" /><path d="M18 9l0 11" /></svg>
         </button> 
     </div>
+    <div>
+        <form class="border-b-gray-300 border-[1px] " action="/buscar" method="get">
+            <input class="py-3 font-Protest  px-16 m-3" type="text" name="" placeholder="Buscar...">
+            <button type="submit"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a7 7 0 1 0 14 0 7 7 0 1 0-14 0M21 21l-6-6"/></svg></button>
+          </form>
+         <div >
+            <h2>Categoria</h2>
+            <ul id="listaCategorias">
+                <!-- <li class="py-2">Categoria 1</li>
+                <li class="py-2">Categoria 2</li>
+                <li class="py-2">Categoria 3</li> -->
+              </ul>
+         </div>
+    </div>
+
+
+
+
 </aside>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contenido filtro responsive  -->
 <aside class=" stop  fixed inset-0   bg-[#ffffff] h-full hidden  flex-col  w-full z-50 ">
     <div class="w-full flex justify-end">
         <span class=" text-black p-3 text-2xl font-black ">X</span>
