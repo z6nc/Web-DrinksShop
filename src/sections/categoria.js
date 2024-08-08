@@ -7,3 +7,11 @@ export function recuperarCategorias(Producto) {
     return Array.from(categorias);
 }
 
+export function recuperarMarca(Producto) {
+    const Marcas = new Set();
+    Producto.forEach(producto => {
+        Marcas.add(producto.marca);
+    });
+    return Array.from(Marcas);
+}
+
