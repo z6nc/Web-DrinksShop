@@ -1,4 +1,3 @@
-import { Producto } from "./productos.ts";
 
 export function recuperarCategorias(Producto) {
     const categorias = new Set();
@@ -7,4 +6,4 @@ export function recuperarCategorias(Producto) {
     });
     return Array.from(categorias);
 }
-console.log(recuperarCategorias(Producto));
+

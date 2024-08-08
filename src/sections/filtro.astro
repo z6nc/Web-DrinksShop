@@ -11,6 +11,8 @@ import { recuperarCategorias } from "./categoria.js";
         </button> 
     </div>
     <div>
+
+      <!-- Buscador  -->
       <form class="border-b-gray-300 border-[1px] grid grid-cols-[9fr,1fr] items-center gap-2 px-2" action="/buscar" method="get">
         <input class="font-Protest p-2   my-2  focus:border-red-500" type="text" name="search" placeholder="BUSCA TU BEBIDA PREFERIDA" aria-label="Buscar">
         <button type="submit"  class="hover:text-[#f00] ">
@@ -20,13 +22,30 @@ import { recuperarCategorias } from "./categoria.js";
             </svg>
         </button>
     </form>
-         <div >
-            <h2>Categoria</h2>
-            <ul id="listaCategorias">
-                <li class="py-2">Categoria 1</li>
-                <li class="py-2">Categoria 2</li>
-                <li class="py-2">Categoria 3</li> 
-              </ul>
+
+    <!-- Cuerpo de filtro  -->
+     <!-- Filtro de Categorias -->
+         <div id="ContainerCategoria" class="shadow-md mx-1 my-3  overflow-hidden">
+          <div class="flex justify-between items-center text-center p-3 bg-slate-200">
+            <h2 class="font-semibold">CATEGORIA DE BEBIDA</h2>
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-minus"><path d="M5 12h14"/></svg>
+             </button>
+           <button  class="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-plus"><path d="M12 5v14M5 12h14"/></svg>
+           </button>
+          </div>
+          <ul id="listaMarcas" class="">
+            {
+              recuperarCategorias(Producto).map((categorias) => (
+                <li class="flex gap-3 px-1 py-3 uppercase text-[13px] hover:bg-[#f0f0f09c] ">
+                  <input class="cursor-pointer" type="checkbox" name="marca" value={categorias} />
+                  <span class="cursor-default">{categorias}</span>
+                </li>
+              ))
+            }
+           
+          </ul>
          </div>
     </div>
 
@@ -105,6 +124,13 @@ input::placeholder {
   text-transform: none;
   letter-spacing: normal;
   opacity: 0.7; /* Opcional: cambia la opacidad del placeholder */
+}
+
+#ContainerCategoria{
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #f00 #fff;
 }
 
 </style>
