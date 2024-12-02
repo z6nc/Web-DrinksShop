@@ -1,0 +1,91 @@
+<nav
+  class="Menu slide-in fixed top-0 left-[-100%] bg-[#ffffff] slide-in h-full hidden flex-col w-[80%] z-50"
+>
+  <div class="py-5 px-6">
+    <span class="text-2xl font-bold text-black">X</span>
+    <div class="flex flex-col w-auto my-10">
+      <a
+        class="border-[#cfcece] border-b-[1px] font-medium text-[15px] py-4"
+        href="/">HOME</a
+      >
+      <a
+        class="border-[#cfcece] border-b-[1px] font-medium text-[15px] py-4"
+        href="/productosCompletos">PRODUCTOS</a
+      >
+      <a
+        class="border-[#cfcece] border-b-[1px] font-medium text-[15px] py-4"
+        href="#"
+        >CATEGORIAS
+      </a>
+      <a
+        class="border-[#cfcece] border-b-[1px] font-medium text-[15px] py-4"
+        href="#"
+        >ABOUT
+      </a>
+      <a
+        class="border-[#cfcece] border-b-[1px] font-medium text-[15px] py-4"
+        href="#"
+        >INICIA SESSION
+      </a>
+    </div>
+    <div class="flex flex-col justify-center items-center my-9">
+      <h1 class="font-Protest text-4xl -skew-y-6">RefrescaShop</h1>
+      <div class="flex flex-row my-7">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
+          ><path stroke="none" d="M0 0h24v24H0z"></path><path
+            d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"
+          ></path><path d="M9 12a3 3 0 1 0 6 0 3 3 0 1 0-6 0M16.5 7.5v.01"
+          ></path></svg
+        >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"
+          ><path stroke="none" d="M0 0h24v24H0z"></path><path
+            d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2H7"
+          ></path></svg
+        >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"
+          ><path stroke="none" d="M0 0h24v24H0z"></path><path
+            d="m4 4 11.733 16H20L8.267 4zM4 20l6.768-6.768m2.46-2.46L20 4"
+          ></path></svg
+        >
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+
+
+  const Exit = document.querySelector(".Menu span");
+  if (Exit) {
+    Exit.addEventListener("click", () => {
+      (document.querySelector(".Menu") as HTMLElement).style.display = "none";
+    });
+  }
+</script>
