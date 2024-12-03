@@ -4,7 +4,6 @@ import Footer from "../sections/footer.astro";
 import {NavbarPrincipal} from "../sections/navbars/navbar.jsx";
 
 import ProductosSeccion from "../sections/ProductosSeccion.astro";
-import Filtro from "../sections/filtro.astro";
 ---
 
 
@@ -13,7 +12,6 @@ import Filtro from "../sections/filtro.astro";
      <NavbarPrincipal  posicion={"relative"} bg={"bg-red-500"} client:idle /> 
   </header>
   <main class="grid  lg:grid-cols-[25%,75%]  lg:max-w-[1550px] mx-auto py-7">
-      <Filtro /> 
      <ProductosSeccion />
   </main>
   <footer>

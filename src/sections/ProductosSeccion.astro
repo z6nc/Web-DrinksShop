@@ -5,13 +5,13 @@ import { Producto } from "./productos.ts";
 <section class=" h-auto">
  <div class="grid lg:grid-cols-5 grid-cols-3  gap-5 ">
     {
-        Producto.map(({ id,nombre, img, marca, precio }) => (
+        Producto.map(({ id,nombre, img,  precio }) => (
           <article id="articulo" class=" overflow-hidden  rounded-lg p-3  bg-white shadow-lg flex flex-col justify-evenly">
             <img class="" src={img} alt="" />
             <div class="lg:py-3 lg:px-2">
-              <p class="text-[#767676] lg:tracking-wider lg:text-[11px] text-[10px] uppercase">
+              {/* <p class="text-[#767676] lg:tracking-wider lg:text-[11px] text-[10px] uppercase">
                 {marca}
-              </p>
+              </p> */}
               <h4 class="lg:text-base   text-[16px] font-extralight ">{nombre}</h4>
               <h3 class="text-base lg:text-lg font-semibold text-[#717171]">S/ {precio}</h3>
             </div>
