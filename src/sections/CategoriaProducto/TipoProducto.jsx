@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Producto } from "../productos.ts";
-import { SvgTipos } from "../SvgTipos.jsx";
+// import { SvgTipos } from "../SvgTipos.jsx";
 
 export function TipoProducto() {
   const [Tipo, setTipo] = useState([]); // Inicializa como array vacío
@@ -36,7 +36,7 @@ export function TipoProducto() {
                     {nombre}
                     </h4>
                     <div className="inline-flex items-center gap-3 justify-center font-Nunito text-gray-600">
-                    <p>{SvgTipos[tipo]}</p>/
+                    <p>{tipo}</p>/
                     <h3 className=" font-semibold tracking-wider ">${precio}</h3>
                     </div>
                 </div>
