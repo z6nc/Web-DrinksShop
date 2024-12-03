@@ -1,60 +1,10 @@
 ---
-import NavbarMovil from "./navbarMovil.astro";
-
-// NavBar
-const Stylelinks="p-6 transition text-[13px]  border-b-2 border-transparent hover:border-white ";
+import {NavbarPrincipal} from './navbars/navbar.jsx';
 ---
 
-<nav id="Navbar" class="text-white w-full flex  justify-evenly py-3 lg:h-[115px] items-center  fixed z-30  ">
-    <ul class="lg:flex tracking-wide font-light   hidden">
-      <li>
-        <a class={Stylelinks} href="/">HOME</a>
+<NavbarPrincipal />
 
-      </li>
-      <li class="mx-4">
-        <a class={Stylelinks}  href="/productosCompletos">PRODUCTOS </a>
 
-      </li>
-      <li>
-        <a class={Stylelinks} href="">CATEGORIA </a>
-
-      </li>
-
-    </ul>
-
- <!-- Boton responsive navbar -->
-    <button class="flex lg:hidden split">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z"/><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-    </button>
- <h2 id="navbarH2" class="text-[30px] lg:text-[36px] font-Protest text-transparent customShadow  font-black cursor-default uppercase hover:scale-105 transition ">HydraViva</h2>
-      
-
-     <ul class="lg:flex tracking-wide px-5  font-light hidden">
-        <li>
-          <a class={Stylelinks} href="">ABOUT</a>
-        </li>
-        <li>
-          <a class={Stylelinks} href="">USUARIO</a>
-        </li>
-        <li>
-          <a class={Stylelinks} href="">CARRITO COMPRA</a>
-        </li>
-      </ul>
-      <div class="flex gap-3 lg:hidden">
-        <button>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-bag"><path stroke="none" d="M0 0h24v24H0z"/><path d="M6.331 8H17.67a2 2 0 0 1 1.977 2.304l-1.255 8.152A3 3 0 0 1 15.426 21H8.574a3 3 0 0 1-2.965-2.544l-1.255-8.152A2 2 0 0 1 6.331 8z"/><path d="M9 11V6a3 3 0 0 1 6 0v5"/></svg>
-        </button>
-        <button>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z"/><path d="M3 10a7 7 0 1 0 14 0 7 7 0 1 0-14 0M21 21l-6-6"/></svg>
-        </button>
-      </div>
-
-</nav>
-
-<!-- NavBar Responsive -->
-<NavbarMovil />
-
- <!-- Estilos de  titulo Principal -->
 <style>
   .customShadow {
     -webkit-text-stroke: 1px rgb(255, 255, 255); /* Para navegadores basados en WebKit (Safari, Chrome) */
@@ -84,38 +34,3 @@ transition: .3s all ease-in-out;
 </style>
 
 
-<!-- Script Responsive -->
-<script>
-  const navbar = document.getElementById('Navbar');
-const navbarh2 = document.getElementById('navbarH2');
-
-// Función para cambiar el color de fondo de la barra de navegación al hacer scroll
-
-window.addEventListener('scroll', () => {
-  if (navbar && navbarh2 ) {
-    if (window.scrollY > 10) { 
-    navbar.classList.add('scrolled-navbar');
-    navbarh2.classList.add('scrolled-h2');
-
-  } else {
-    navbar.classList.remove('scrolled-navbar');
-    navbarh2.classList.remove('scrolled-h2');
-
-  }
-    
-  }
- 
-});
-
-const botones = document.querySelectorAll(".split");
-  botones.forEach((boton) => {
-    boton.addEventListener("click", () => {
-      (document.querySelector(".Menu") as HTMLElement).style.display = "flex";
-    });
-  });
-
-
-
- 
-
-</script>
