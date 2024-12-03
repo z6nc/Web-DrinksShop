@@ -67,7 +67,7 @@ export function ProductoSlider({tipo}) {
           id="art"
           className="flex flex-wrap gap-3 lg:gap-6  lg:max-w-7xl lg:mx-auto   justify-between mx-3"
         >
-          {productos.slice(0, 5).map(({ id, nombre, img, precio, tipo }) => (
+          {productos.slice(0, 6).map(({ id, nombre, img, precio, tipo }) => (
             <article
               id="articulo"
               className="bg-white rounded-lg  overflow-hidden  flex flex-col justify-between gap-2 animate-fade-in-up"

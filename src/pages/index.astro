@@ -1,10 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-// import Productos from "../sections/Productos.astro";
 import Hero from "../sections/hero.astro";
 import Slider from "../sections/sliders.astro";
-// import ProductosAgua from "../sections/productosAgua.astro";
-import BebidasGrid from "../sections/bebidasGrid.astro";
 import Footer from "../sections/footer.astro";
 import {NavbarPrincipal} from "../sections/navbars/navbar.jsx";
 import {ProductoSlider} from "../sections/ProductosSlider/ProductoSlider";
@@ -20,12 +17,10 @@ import {ProductoSlider} from "../sections/ProductosSlider/ProductoSlider";
       <Hero />
     </hero>
   <main class="lg:max-w-7xl mx-auto ">
+    <Slider />
     <ProductoSlider tipo={"energizante"}  client:idle/>
     <ProductoSlider tipo={"nutricional"}  client:idle/>
     <ProductoSlider tipo={"hidratante"}  client:idle/>
-
-    <BebidasGrid />
-    <Slider />
 
     <!-- <ProductosAgua /> -->
   </main>

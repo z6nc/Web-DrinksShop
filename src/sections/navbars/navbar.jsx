@@ -58,9 +58,9 @@ export function NavbarPrincipal({posicion , bg}) {
         </button>
         <h2
           id="navbarH2"
-          className="text-[30px] lg:text-[36px] font-Nunito text-black font-black cursor-default  hover:scale-105 transition "
+          className="text-[30px] lg:text-[36px] font-Nunito text-black font-black cursor-default  hover:scale-105 transition  uppercase"
         >
-          HYDRAVIVA
+         FreshFusion
         </h2>
 
         <ul className="lg:flex tracking-wide px-5  font-light hidden">
