@@ -1,15 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Footer from "../sections/footer.astro";
-import NavbarSecond from "../sections/NavbarSecond.astro";
+import {NavbarPrincipal} from "../sections/navbars/navbar.jsx";
+
 import ProductosSeccion from "../sections/ProductosSeccion.astro";
 import Filtro from "../sections/filtro.astro";
 ---
 
 
 <Layout title="RefrescaShop">
-  <header>
-     <NavbarSecond /> 
+  <header  class="relative">
+     <NavbarPrincipal  posicion={"relative"} bg={"bg-red-500"} client:idle /> 
   </header>
   <main class="grid  lg:grid-cols-[25%,75%]  lg:max-w-[1550px] mx-auto py-7">
       <Filtro /> 

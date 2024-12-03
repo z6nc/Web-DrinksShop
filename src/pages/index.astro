@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navbar from "../sections/navbar.astro";
 import Productos from "../sections/Productos.astro";
 import Hero from "../sections/hero.astro";
 import Proveedores from "../sections/prove.astro";
@@ -10,7 +9,6 @@ import ProductosAgua from "../sections/productosAgua.astro";
 import BebidasGrid from "../sections/bebidasGrid.astro";
 import Footer from "../sections/footer.astro";
 import {NavbarPrincipal} from "../sections/navbars/navbar.jsx";
-import { NavbarMovil } from "../sections/navbars/navbarMovil";
 
 ---
 
@@ -18,7 +16,7 @@ import { NavbarMovil } from "../sections/navbars/navbarMovil";
   
   <header class="relative">
     <!-- <Navbar /> -->
-    <NavbarPrincipal client:idle/>
+    <NavbarPrincipal posicion={"fixed"} bg={"bg-transparent"}  client:idle/>
     <hero>
       <Hero />
     </hero>
