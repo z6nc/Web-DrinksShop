@@ -1,14 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Productos from "../sections/Productos.astro";
+// import Productos from "../sections/Productos.astro";
 import Hero from "../sections/hero.astro";
-import Proveedores from "../sections/prove.astro";
 import Slider from "../sections/sliders.astro";
-import SliderInfo from "../sections/sliderInfo.astro";
-import ProductosAgua from "../sections/productosAgua.astro";
+// import ProductosAgua from "../sections/productosAgua.astro";
 import BebidasGrid from "../sections/bebidasGrid.astro";
 import Footer from "../sections/footer.astro";
 import {NavbarPrincipal} from "../sections/navbars/navbar.jsx";
+import {ProductoSlider} from "../sections/ProductosSlider/ProductoSlider";
 
 ---
 
@@ -16,21 +15,24 @@ import {NavbarPrincipal} from "../sections/navbars/navbar.jsx";
   
   <header class="relative">
     <!-- <Navbar /> -->
-    <NavbarPrincipal posicion={"fixed"} bg={"bg-transparent"}  client:idle/>
+    <NavbarPrincipal posicion={"fixed"} bg={"bg-white"}  client:idle/>
     <hero>
       <Hero />
     </hero>
   <main class="lg:max-w-7xl mx-auto ">
-    <Proveedores />
-    <Slider />
-    <Productos />
+    <ProductoSlider tipo={"energizante"}  client:idle/>
+    <ProductoSlider tipo={"nutricional"}  client:idle/>
+    <ProductoSlider tipo={"hidratante"}  client:idle/>
+
     <BebidasGrid />
-    <ProductosAgua />
+    <Slider />
+
+    <!-- <ProductosAgua /> -->
   </main>
-  <div class="lg:max-w-7xl mx-auto ">
-    <SliderInfo />
-  </div>
+
   <Footer />
 </header>
+
+
 
 </Layout>

@@ -31,7 +31,7 @@ export function NavbarPrincipal({posicion , bg}) {
     <>
       <nav
         id="Navbar"
-        className={`text-white border-b-[1px] border-[#7c7c7c] w-full flex justify-evenly py-3 lg:h-[115px] items-center z-30 ${posicion} ${bg}`}
+        className={`text-black border-b-[1px] border-[#7c7c7c] w-full flex justify-evenly py-3 lg:h-[80px] items-center z-30 ${posicion} ${bg}`}
 
       >
         <ul className="lg:flex tracking-wide font-light   hidden">
@@ -58,7 +58,7 @@ export function NavbarPrincipal({posicion , bg}) {
         </button>
         <h2
           id="navbarH2"
-          className="text-[30px] lg:text-[36px] font-Nunito text-green-100 font-black cursor-default  hover:scale-105 transition "
+          className="text-[30px] lg:text-[36px] font-Nunito text-black font-black cursor-default  hover:scale-105 transition "
         >
           HYDRAVIVA
         </h2>
