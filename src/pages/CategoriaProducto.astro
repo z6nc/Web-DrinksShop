@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import {NavbarPrincipal} from "../sections/navbars/navbar.jsx";
 import {ProductoHero} from "../sections/CategoriaProducto/ProductoFiltro.jsx";
 import Footer from "../sections/footer.astro";
+import {TipoProducto} from "../sections/CategoriaProducto/TipoProducto.jsx";
 
 ---
 
@@ -13,6 +14,7 @@ import Footer from "../sections/footer.astro";
   </header>
   <main>
     <ProductoHero client:idle />
+    <TipoProducto client:idle />
   </main>
   <footer>
     <Footer />
