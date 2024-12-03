@@ -2,23 +2,20 @@
 const StyleArticle=" relative overflow-hidden backdrop-brightness-50 rounded-md flex items-center justify-center  ";
 const StyleH3=" z-50 absolute text-center  text-[22px] customShadow  lg:text-2xl  text-white  uppercase  ";
 const StyleImg=" w-full h-full object-cover absolute inset-0   trasition duration-500 ease-in-out ";
+import {Categorias} from "../sections/categoria.js";
 ---
 <section class="grid grid-cols-2 gap-4  lg:grid-cols-3 lg:h-64 h-56 font-Protest my-3 mx-3  lg:mx-0">
-   
-    <article class={StyleArticle}>
-        <a class={StyleH3} href=""><h3 >energizante</h3></a> 
-         <img class={StyleImg} src="https://images.ecestaticos.com/PJFwnAB4rG8mGFjXcvO8k4kzMWc=/15x23:2271x1277/1200x675/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F9b5%2Fe64%2Ff4a%2F9b5e64f4a15d0da3dfae3d8d5ec88645.jpg" alt="Imagen de energizante">
-    </article>
-    
-        <article class={StyleArticle} >
-            <a class={StyleH3} href=""><h3 >hidratante</h3></a>
-            <img class={StyleImg} src="https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/ZGIOCMP7FZOZRO7LKNC7CMWP7Y.jpg" alt="Imagen de agua ">
-        </article>
-
-    <article class={StyleArticle} >
-        <a class={StyleH3} href="" ><h3>nutricional</h3></a> 
-        <img class={StyleImg} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQM0184Aw8nKSIRRw05O3bnMLonF-CyNB0oA&s" alt="Imagen de bebidas Naturales">
-    </article>
+   {
+         Categorias.map((categoria)=>{
+              return(
+                <article class={StyleArticle}>
+                     <a class={StyleH3} href={`/CategoriaProducto?id=${categoria.id}`}><h3 >{categoria.nombre}</h3></a> 
+                      <img class={StyleImg} src={categoria.img} alt={`Imagen de ${categoria.nombre}`}/>
+                </article>
+              )
+         })
+   }
+       
 </section>
 
 <style>

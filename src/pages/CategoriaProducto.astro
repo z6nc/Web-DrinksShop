@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import {NavbarPrincipal} from "../sections/navbars/navbar.jsx";
+import {ProductoHero} from "../sections/CategoriaProducto/ProductoFiltro.jsx";
+import Footer from "../sections/footer.astro";
+
+---
+
+
+<Layout title="RefrescaShop">
+  <header  class="relative">
+    <NavbarPrincipal posicion={"relative"} bg={"bg-white"}  client:idle />
+  </header>
+  <main>
+    <ProductoHero client:idle />
+  </main>
+  <footer>
+    <Footer />
+  </footer>
+</Layout>
+

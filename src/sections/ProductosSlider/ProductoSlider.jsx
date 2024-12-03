@@ -69,10 +69,11 @@ export function ProductoSlider({tipo}) {
         >
           {productos.slice(0, 6).map(({ id, nombre, img, precio, tipo }) => (
             <article
+            key={id}
               id="articulo"
               className="bg-white rounded-lg  overflow-hidden  flex flex-col justify-between gap-2 animate-fade-in-up"
             >
-                <section>
+                <section >
                     <div className="w-44 overflow-hidden">
                         <img className="w-full h-full object-cover" src={img} alt="" />
                    </div>

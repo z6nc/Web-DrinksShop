@@ -1,17 +1,18 @@
+export const Categorias=[
+    {
+    id:"energizante",
+    nombre:"energizantes",
+    img:"https://drinkprime.com/cdn/shop/files/DP_Collection_Banner_Desktop_2000x.jpg?v=1716568793",
+},
+{
+    id:"nutricional",
+    nombre:"nutricionales",
+    img:"https://drinkprime.com/cdn/shop/files/BF_Collection_Banner_Desktop_Option_2_1400x.jpg?v=1730385642",
+},
+{
+    id:"hidratante",
+    nombre:"hidratantes",
+    img:"https://drinkprime.com/cdn/shop/files/SB_Collection_Banner_Sticks_Desktop_1400x.jpg?v=1708967824",
+},
 
-export function recuperarCategorias(Producto) {
-    const categorias = new Set();
-    Producto.forEach(producto => {
-        categorias.add(producto.categoria);
-    });
-    return Array.from(categorias);
-}
-
-export function recuperarMarca(Producto) {
-    const Marcas = new Set();
-    Producto.forEach(producto => {
-        Marcas.add(producto.marca);
-    });
-    return Array.from(Marcas);
-}
-
+]
