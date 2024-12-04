@@ -1,5 +1,6 @@
 import { Categorias } from "../categoria.js";
-import { HeroSecundario } from "../heroSecundario.jsx";
+import { HeroSecundario } from "../Hero/heroSecundario.jsx";
+import {HeroSecundarioGost} from "../Hero/HeroWait.jsx";
 import { useEffect, useState } from "react";
 
 export function ProductoHero() {
@@ -24,7 +25,7 @@ export function ProductoHero() {
       {encontrado ? (
         <HeroSecundario ImgPrincipal={encontrado.img} />
       ) : (
-        <p>Cargando o no se encontró la categoría</p>
+        <HeroSecundarioGost />
       )}
     </>
   );

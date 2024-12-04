@@ -14,7 +14,7 @@ export function ProductoSlider({tipo}) {
           id="art"
           className="flex flex-wrap gap-3 lg:gap-6  lg:max-w-7xl lg:mx-auto   justify-between mx-3"
         >
-          {productos.slice(0, 6).map(({ id, nombre, img, precio, tipo }) => (
+          {productos.slice(0, 5).map(({ id, nombre, img, precio, tipo }) => (
             <article
             key={id}
               id="articulo"
@@ -41,7 +41,7 @@ export function ProductoSlider({tipo}) {
                   className="lg:text-base text-sm  my-4 font-bold"
                   href={`productoDetalle?id=${id}`}
                 >
-                   ADD CARD
+                   MORE INFO
                 </a>
               </button>
             </article>

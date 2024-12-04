@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Producto } from "../productos.ts";
+import { TipoProductoWait } from "./TipoProductoWait.jsx";
 // import { SvgTipos } from "../SvgTipos.jsx";
 
 export function TipoProducto() {
@@ -15,24 +16,26 @@ export function TipoProducto() {
     } else {
       console.error("ID no válido");
     }
-  }, []); // Dependencias vacías, ejecuta useEffect solo una vez
+  }, []); 
 
   return (
     <>
-    <section className="flex flex-wrap gap-3 lg:gap-6  lg:max-w-4xl lg:mx-auto   justify-between mx-3">
-    {Tipo.length > 0 ? ( // Comprueba si hay productos para mostrar
+    <section className="flex flex-wrap gap-3 lg:gap-6  pb-8 lg:max-w-4xl lg:mx-auto   justify-between mx-3">
+    {
+    
+    Tipo.length > 0 ? ( // Comprueba si hay productos para mostrar
         Tipo.map(({ id, nombre, img, precio ,tipo}) => (
             <article
             key={id}
               id="articulo"
-              className="bg-white rounded-lg  overflow-hidden   flex flex-col justify-between gap-2 animate-fade-in-up"
+              className="bg-white rounded-lg  overflow-hidden  flex flex-col justify-between gap-2 "
             >
-                <section className="">
+                <section className=" flex flex-col items-center text-center">
                     <div className="w-56 overflow-hidden">
                         <img className="w-full h-full object-cover" src={img} alt="" />
                    </div>
                 <div className=" text-center overflow-hidden flex flex-wrap flex-col w-44  items-center justify-center">
-                    <h4 className="lg:text-base  text-[15px]   font-bold uppercase ">
+                    <h4 className="lg:text-base  text-[15px]   font-medium- uppercase ">
                     {nombre}
                     </h4>
                     <div className="inline-flex items-center gap-3 justify-center font-Nunito text-gray-600">
@@ -54,7 +57,7 @@ export function TipoProducto() {
             </article>
         ))
       ) : (
-        <p>No se encontraron productos para este tipo.</p>
+        <TipoProductoWait/>
       )}
     </section>
      

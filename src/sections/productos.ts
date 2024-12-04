@@ -66,7 +66,7 @@ export const Producto = [
     id: 7,
     nombre: "Energizante de Naranja",
     tamaño: "500ml",
-    img: "https://drinkprime.com/cdn/shop/files/swsticksfront_200x.png?v=1689354735",
+    img: "https://res.cloudinary.com/dleem7osr/image/upload/v1733340286/BotellaEnergizanteN-removebg-preview_mge8w9.png",
     descripcion: "Bebida revitalizante hecha con jugo de naranja y jengibre.",
     precio: "10.00",
     categoria: "Botella",
@@ -84,7 +84,7 @@ export const Producto = [
   },
   {
     id: 9,
-    nombre: "Cacao Energizante en Polvo",
+    nombre: "Cacao Energizante ",
     tamaño: "300g",
     img: "https://drinkprime.com/cdn/shop/files/Speed-Bottle-Front_b2fe6348-b16b-4582-b0fb-c2f3efcc2bc5_2000x.png?v=1727210047",
     descripcion: "Cacao orgánico combinado con superalimentos para mayor energía.",

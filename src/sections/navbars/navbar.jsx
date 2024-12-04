@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavbarMovil } from "./navbarMovil";
 
-const Stylelinks="p-6 transition text-[13px]  border-b-2 border-transparent hover:border-white ";
+const Stylelinks="p-6 transition text-[13px]  border-b-2 border-transparent hover:border-white   tracking-wider ";
 const SvgSearch = (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -31,10 +31,10 @@ export function NavbarPrincipal({posicion , bg}) {
     <>
       <nav
         id="Navbar"
-        className={`text-black border-b-[1px] border-[#7c7c7c] w-full flex justify-evenly py-3 lg:h-[80px] items-center z-30 ${posicion} ${bg}`}
+        className={`text-white border-b-[1px] border-[#7c7c7c] w-full flex justify-evenly px-3 py-3 lg:h-[80px] items-center z-30 backdrop-blur-3xl  ${posicion} ${bg}`}
 
       >
-        <ul className="lg:flex tracking-wide font-light   hidden">
+        <ul className="lg:flex tracking-wide font-medium   hidden">
           <li>
             <a className={Stylelinks} href="/">
               HOME
@@ -42,7 +42,7 @@ export function NavbarPrincipal({posicion , bg}) {
           </li>
           <li className="mx-4">
             <a className={Stylelinks} href="/productosCompletos">
-              PRODUCTOS
+              NUESTROS PRODUCTOS
             </a>
           </li>
           <li>
@@ -58,7 +58,7 @@ export function NavbarPrincipal({posicion , bg}) {
         </button>
         <h2
           id="navbarH2"
-          className="text-[30px] lg:text-[36px] font-Nunito text-black font-black cursor-default  hover:scale-105 transition  uppercase"
+          className="text-[30px] lg:text-[36px] font-Nunito text-white font-black cursor-default  hover:scale-105 transition  uppercase"
         >
          FreshFusion
         </h2>
@@ -80,6 +80,7 @@ export function NavbarPrincipal({posicion , bg}) {
             </a>
           </li>
         </ul>
+        
         <div className="flex gap-3 lg:hidden">
           <button>
             {SvgCar}
