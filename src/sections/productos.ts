@@ -2,7 +2,7 @@ export const Producto = [
   // Hidratantes
   {
     id: 1,
-    nombre: "Exótico de Mango",
+    nombre: "Mango Splash",
     tamaño: "1.5L",
     img: "https://res.cloudinary.com/dleem7osr/image/upload/e_background_removal/f_png/v1733244460/greenDetox_u9xnq5.png",
     descripcion: "Refrescante bebida a base de mango con un toque tropical.",
@@ -74,9 +74,9 @@ export const Producto = [
   },
   {
     id: 8,
-    nombre: "Té Matcha en Polvo",
+    nombre: "MatchaZen",
     tamaño: "250g",
-    img: "https://drinkprime.com/cdn/shop/files/Speed-Bottle-Front_b2fe6348-b16b-4582-b0fb-c2f3efcc2bc5_2000x.png?v=1727210047",
+    img: "https://res.cloudinary.com/dleem7osr/image/upload/v1733354295/MatchaZen-removebg-preview_whfvz5.png",
     descripcion: "Polvo de té verde japonés, ideal para bebidas energizantes y antioxidantes.",
     precio: "20.00",
     categoria: "Polvo",
@@ -84,9 +84,9 @@ export const Producto = [
   },
   {
     id: 9,
-    nombre: "Cacao Energizante ",
+    nombre: " Energizante de Cacao",
     tamaño: "300g",
-    img: "https://drinkprime.com/cdn/shop/files/Speed-Bottle-Front_b2fe6348-b16b-4582-b0fb-c2f3efcc2bc5_2000x.png?v=1727210047",
+    img: "https://res.cloudinary.com/dleem7osr/image/upload/v1733354479/CacaoBebida-removebg-preview_uxrx2q.png",
     descripcion: "Cacao orgánico combinado con superalimentos para mayor energía.",
     precio: "28.00",
     categoria: "Polvo",
@@ -94,9 +94,9 @@ export const Producto = [
   },
   {
     id: 10,
-    nombre: "Bebida de Guaraná",
+    nombre: "PowerGua",
     tamaño: "500ml",
-    img: "https://drinkprime.com/cdn/shop/files/Speed-Bottle-Front_b2fe6348-b16b-4582-b0fb-c2f3efcc2bc5_2000x.png?v=1727210047",
+    img: "https://res.cloudinary.com/dleem7osr/image/upload/v1733353997/BebidaGua-removebg-preview_wqqyf1.png",
     descripcion: "Bebida energizante natural con guaraná, ideal para aumentar el rendimiento.",
     precio: "18.00",
     categoria: "Botella",
@@ -106,7 +106,7 @@ export const Producto = [
     id: 11,
     nombre: "Matcha Latte Energizante",
     tamaño: "200g",
-    img: "https://drinkprime.com/cdn/shop/files/Speed-Bottle-Front_b2fe6348-b16b-4582-b0fb-c2f3efcc2bc5_2000x.png?v=1727210047",
+    img: "https://res.cloudinary.com/dleem7osr/image/upload/v1733354711/BebidaMatchaLate-removebg-preview_ab7awx.png",
     descripcion: "Matcha latte en polvo, con un toque energizante para tus mañanas.",
     precio: "22.00",
     categoria: "Polvo",
