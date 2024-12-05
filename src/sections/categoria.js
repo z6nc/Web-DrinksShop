@@ -2,17 +2,17 @@ export const Categorias=[
     {
     id:"energizante",
     nombre:"energizantes",
-    img:"https://drinkprime.com/cdn/shop/files/DP_Collection_Banner_Desktop_2000x.jpg?v=1716568793",
+    img:"https://tse2.mm.bing.net/th?id=OIG2.lnsxpIoDn_yS5Qer3hGw&pid=ImgGn",
 },
 {
     id:"nutricional",
     nombre:"nutricionales",
-    img:"https://drinkprime.com/cdn/shop/files/BF_Collection_Banner_Desktop_Option_2_1400x.jpg?v=1730385642",
+    img:"https://tse3.mm.bing.net/th?id=OIG2.JHR0IxVljLAF9I5C1Yjg&pid=ImgGn",
 },
 {
     id:"hidratante",
     nombre:"hidratantes",
-    img:"https://drinkprime.com/cdn/shop/files/SB_Collection_Banner_Sticks_Desktop_1400x.jpg?v=1708967824",
+    img:"https://tse3.mm.bing.net/th?id=OIG3..HeHIpQA_aLS0Jr5tfEw&pid=ImgGn",
 },
 
 ]

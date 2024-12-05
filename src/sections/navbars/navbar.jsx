@@ -60,7 +60,7 @@ export function NavbarPrincipal({posicion , bg}) {
           id="navbarH2"
           className="text-[30px] lg:text-[36px] font-Nunito text-white font-black cursor-default  hover:scale-105 transition  uppercase"
         >
-         FreshFusion
+        EnergiX
         </h2>
 
         <ul className="lg:flex tracking-wide px-5  font-light hidden">
