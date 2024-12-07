@@ -58,7 +58,7 @@ export function NavbarPrincipal({posicion , bg}) {
         </button>
         <h2
           id="navbarH2"
-          className="text-[30px] lg:text-[36px] font-Nunito text-white font-black cursor-default  hover:scale-105 transition  uppercase"
+          className="text-[30px] lg:text-[36px] font-ArchivoBlack text-white font-black cursor-default  hover:scale-105 transition  uppercase"
         >
         EnergiX
         </h2>

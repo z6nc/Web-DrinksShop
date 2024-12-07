@@ -6,7 +6,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'Nunito': ['Nunito Sans', 'sans-serif'],
-				'Protest': ['Protest Strike', 'sans-serif'],
+				'ArchivoBlack': ['Archivo Black', 'sans-serif'],
 				'Archivo': ['Archivo', 'sans-serif'],
 
 			  },

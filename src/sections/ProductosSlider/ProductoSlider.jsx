@@ -1,5 +1,6 @@
 import { Producto } from "../../sections/productos.ts";
 import { SvgTipos } from "../../sections/SvgTipos.jsx";
+import { ImagenSlider } from "../../sections/ProductosSlider/ImagenSlider.jsx";
 export function ProductoSlider({tipo}) {
    const productos = Producto.filter((producto) => producto.tipo === tipo);
      
@@ -7,9 +8,10 @@ export function ProductoSlider({tipo}) {
     <>
 
       <section className="font-Nunito  pb-8">
-        <h1 className="font-black text-4xl lg:text-9xl pl-3  lg:py-2 text-center tracking-widest uppercase">
+        <h1 className="font-black text-4xl lg:text-9xl pl-3 font-ArchivoBlack lg:py-2 text-center tracking-widest uppercase">
           {tipo}
         </h1>
+
         <div
           id="art"
           className="flex flex-wrap gap-3 lg:gap-6  lg:max-w-7xl lg:mx-auto   justify-between mx-3"
@@ -25,7 +27,7 @@ export function ProductoSlider({tipo}) {
                         <img className="w-full h-full object-cover " src={img} alt="" />
                    </div>
                 <div className=" text-center overflow-hidden flex flex-wrap flex-col w-44 ">
-                    <h4 className="lg:text-base  text-[15px]   font-bold uppercase ">
+                    <h4 className="lg:text-base  text-[15px]    font-bold uppercase ">
                     {nombre}
                     </h4>
                     <div className="inline-flex items-center gap-3 justify-center font-Nunito text-gray-600">
@@ -38,7 +40,7 @@ export function ProductoSlider({tipo}) {
 
               <button className=" w-full h-9 bg-black border-[1px] border-black  text-white font-Nunito hover:bg-white hover:text-black transition ">
                 <a
-                  className="lg:text-base text-sm  my-4 font-bold"
+                  className="lg:text-base text-sm  my-4 font-bold "
                   href={`productoDetalle?id=${id}`}
                 >
                    MORE INFO
@@ -47,6 +49,8 @@ export function ProductoSlider({tipo}) {
             </article>
           ))}
         </div>
+       <ImagenSlider nombre={"energizantes"} client:idle/>
+
       </section>
     </>
   );

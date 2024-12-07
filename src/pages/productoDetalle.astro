@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import {NavbarPrincipal} from "../sections/navbars/navbar.jsx";
+import { DetalleProducto } from "../sections/DetalleProducto/DetalleProducto";
 
 import Footer from "../sections/footer.astro";
 
@@ -11,7 +12,9 @@ import Footer from "../sections/footer.astro";
   <header  class="relative">
     <NavbarPrincipal posicion={"relative"} bg={"bg-red-500"}  client:idle />
   </header>
-  <main>
+  <main class="lg:max-w-7xl mx-auto ">
+    <!-- DetalleProdcuto -->
+     <DetalleProducto client:idle/>
   </main>
   <footer>
     <Footer />
