@@ -11,23 +11,31 @@ export function DetalleProducto() {
             alt=""
           />
         </div>
-        <div className="flex  flex-col mr-auto gap-3">
+        <div className="flex  flex-col mr-auto gap-3 max-w-80">
           <div className="flex  flex-col gap-7 border-b-[1px] border-gray-300 pb-6">
-            <h1 className=" text-3xl font-ArchivoBlack">COCONUT DEW SLASH</h1>
-            <p className="font-Nunito text-5xl font-black ">$29.99</p>
+            <div>
+              <h1 className=" text-2xl font-ArchivoBlack">COCONUT DEW SLASH</h1>
+              <p>500ml</p>
+            </div>
+            <p className=" text-3xl font-ArchivoBlack text-gray-700 ">$28.00</p>
             <Rating />
             <Contador />
             <button className="font-ArchivoBlack border-[1px] border-black bg-black text-white   px-2 py-3 hover:bg-white hover:text-black transition-all ease-in-out duration-100 ">
               ADD TO CARD
             </button>
           </div>
-          <div>
-             <ul className="text-sm">
-                <li>GG</li>
-                <li>ASDAS</li>
-                <li>DASDAS</li>
-                <li>ASDASD</li>
-             </ul>
+          <div className="text-gray-500">
+            <h2 className=" font-ArchivoBlack ">DESCRIPCION</h2>
+            <p className=" text-sm  ">
+            Refrescante bebida a base de mango con un toque tropical.
+            </p>
+            <ul className="text-sm list-disc ml-4 flex flex-col gap-3">
+              <li>Zero Added Sugar</li>
+              <li>25 Calories</li>
+              <li>Antioxidants + Electrolytes</li>
+              <li>Caffeine-Free + Gluten-Free</li>
+            </ul>
+          
           </div>
         </div>
       </div>
