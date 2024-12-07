@@ -22,7 +22,7 @@ export function ProductoSlider({tipo}) {
             >
                 <section >
                     <div className="w-44 overflow-hidden">
-                        <img className="w-full h-full object-cover" src={img} alt="" />
+                        <img className="w-full h-full object-cover " src={img} alt="" />
                    </div>
                 <div className=" text-center overflow-hidden flex flex-wrap flex-col w-44 ">
                     <h4 className="lg:text-base  text-[15px]   font-bold uppercase ">

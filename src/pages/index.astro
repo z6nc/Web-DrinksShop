@@ -5,6 +5,7 @@ import Slider from "../sections/sliders.astro";
 import Footer from "../sections/footer.astro";
 import {NavbarPrincipal} from "../sections/navbars/navbar.jsx";
 import {ProductoSlider} from "../sections/ProductosSlider/ProductoSlider";
+import {ImagenSlider} from "../sections/ProductosSlider/ImagenSlider";
 
 ---
 
@@ -18,7 +19,8 @@ import {ProductoSlider} from "../sections/ProductosSlider/ProductoSlider";
     </hero>
   <main class="lg:max-w-7xl mx-auto ">
     <Slider />
-    <ProductoSlider tipo={"energizante"}  client:idle/>
+      <ProductoSlider tipo={"energizante"}  client:idle/>
+      <ImagenSlider nombre={"energizantes"} client:idle/>
     <ProductoSlider tipo={"nutricional"}  client:idle/>
     <ProductoSlider tipo={"hidratante"}  client:idle/>
 
