@@ -49,7 +49,7 @@ export function Rating() {
       <p className="ms-1  font-bold  text-gray-400 ">
         4.2
       </p>
-      <p class="ms-1 font-bold text-gray-400 ">(20)</p>
+      <p className="ms-1 font-bold text-gray-400 ">(20)</p>
     </div>
   );
 }

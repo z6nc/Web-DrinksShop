@@ -31,7 +31,7 @@ export function NavbarPrincipal({posicion , bg}) {
     <>
       <nav
         id="Navbar"
-        className={`text-white border-b-[1px] border-[#7c7c7c] w-full flex justify-evenly px-3 py-3 lg:h-[80px] items-center z-30 backdrop-blur-3xl  ${posicion} ${bg}`}
+        className={`text-black  w-full flex justify-evenly px-3 py-3 lg:h-[80px] items-center z-30 backdrop-blur-3xl  ${posicion} ${bg}`}
 
       >
         <ul className="lg:flex tracking-wide font-medium   hidden">
@@ -58,7 +58,7 @@ export function NavbarPrincipal({posicion , bg}) {
         </button>
         <h2
           id="navbarH2"
-          className="text-[30px] lg:text-[36px] font-ArchivoBlack text-white font-black cursor-default  hover:scale-105 transition  uppercase"
+          className="text-[30px] lg:text-[36px] font-ArchivoBlack text-black font-black cursor-default  hover:scale-105 transition  uppercase"
         >
         EnergiX
         </h2>
