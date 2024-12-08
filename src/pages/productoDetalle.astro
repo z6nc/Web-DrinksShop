@@ -11,13 +11,13 @@ import Footer from "../sections/footer.astro";
 <Layout title="FreshFusion">
   <header  class="relative">
     <NavbarPrincipal posicion={"relative"} bg={"bg-white"}  client:idle />
+    <main class="lg:max-w-7xl mx-auto ">
+      <!-- DetalleProdcuto -->
+      <DetalleProducto client:idle/>
+    </main>
+    <footer>
+      <Footer />
+    </footer>
   </header>
-  <main class="lg:max-w-7xl mx-auto ">
-    <!-- DetalleProdcuto -->
-     <DetalleProducto client:idle/>
-  </main>
-  <footer>
-    <Footer />
-  </footer>
 </Layout>
 
