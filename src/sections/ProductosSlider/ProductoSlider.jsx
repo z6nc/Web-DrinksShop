@@ -14,33 +14,33 @@ export function ProductoSlider({tipo}) {
 
         <div
           id="art"
-          className="flex flex-wrap gap-3 lg:gap-6  lg:max-w-7xl lg:mx-auto   justify-between mx-3"
+          className="flex flex-wrap gap-3  lg:max-w-7xl lg:mx-auto   justify-center "
         >
-          {productos.slice(0, 5).map(({ id, nombre, img, precio, tipo }) => (
+          {productos.slice(0, 4).map(({ id, nombre, img, precio, tipo }) => (
             <article
             key={id}
               id="articulo"
               className="bg-white rounded-lg  overflow-hidden  flex flex-col justify-between gap-2 animate-fade-in-up"
             >
                 <section >
-                    <div className="w-44 overflow-hidden">
+                    <div className="w-44 lg:w-72 overflow-hidden bg-[#f1f1f1]">
                         <img className="w-full h-full object-cover " src={img} alt="" />
                    </div>
-                <div className=" text-center overflow-hidden flex flex-wrap flex-col w-44 ">
-                    <h4 className="lg:text-base  text-[15px]    font-bold uppercase ">
+                <div className=" text-center overflow-hidden flex flex-wrap flex-col w-44 lg:w-full  mx-auto pt-2">
+                    <h4 className="  text-[15px]   uppercase ">
                     {nombre}
                     </h4>
-                    <div className="inline-flex items-center gap-3 justify-center font-Nunito text-gray-600">
+                    <div className="inline-flex items-center gap-3 justify-center  text-gray-600 py-1">
                     <p>{SvgTipos[tipo]}</p>/
-                    <h3 className=" font-semibold tracking-wider ">${precio}</h3>
+                    <h3 className="  tracking-wider ">${precio}</h3>
                     </div>
                 </div>
                 </section>
              
 
-              <button className=" w-full h-9 bg-black border-[1px] border-black  text-white font-Nunito hover:bg-white hover:text-black transition ">
+              <button className=" w-full h-9 bg-black border-[1px] border-black  text-white font-ArchivoBlack hover:bg-white hover:text-black transition ">
                 <a
-                  className="lg:text-base text-sm  my-4 font-bold "
+                  className=" text-xs lg:text-sm  my-4 font-bold"
                   href={`productoDetalle?id=${id}`}
                 >
                    MORE INFO
