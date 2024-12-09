@@ -52,6 +52,7 @@ export function NavbarMovil({ Wait }) {
 
         {/* Links de navegación */}
         <div className="flex flex-col w-auto my-10">
+          {/* Arreglar el li para quie tengan sus respectivos url */}
           {["HOME", "PRODUCTOS", "CATEGORIAS", "ABOUT", "INICIA SESION"].map(
             (link, index) => (
               <a
@@ -67,7 +68,7 @@ export function NavbarMovil({ Wait }) {
 
         {/* Iconos y branding */}
         <div className="flex flex-col justify-center items-center my-9">
-          <h1 className="font-Protest text-4xl -skew-y-6">HydraViva</h1>
+          <h1 className="font-Protest text-4xl -skew-y-6">ENERGIX</h1>
           <div className="flex flex-row my-7">
             {SvgInstagram}
             {SvgExit}
