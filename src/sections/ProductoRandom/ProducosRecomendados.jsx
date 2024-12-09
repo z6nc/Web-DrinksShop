@@ -33,7 +33,7 @@ export function ProductosRecomendar() {
           {productos.map((producto, index) => (
             <div className="flex flex-col items-center" key={index}>
               <div className="w-full">
-                <img className="w-72 bg-[#f1f1f1]" src={producto.img} alt="" />
+                <img className="w-72 bg-[#f1f1f1]" src={producto.img} alt={`imagen de la bebida ${producto.nombre}`} />
               </div>
 
               <div className=" text-center overflow-hidden flex flex-wrap flex-col  items-center pt-2 ">

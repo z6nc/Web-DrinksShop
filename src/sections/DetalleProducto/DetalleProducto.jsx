@@ -45,7 +45,7 @@ export function DetalleProducto() {
           <img className="w-96 bg-[#f1f1f1]" src={imgDos} alt={`otra imagen de bebida ${nombre}`} />
         </div>
       </article>
-      <div className="flex flex-col gap-3 max-w-[20rem]">
+      <div className="flex flex-col gap-3 max-w-[20rem] pl-3">
         <div className="flex flex-col gap-7 border-b border-gray-300 pb-6">
           <div>
             <h1 className="text-2xl font-bold">{nombre}</h1>
