@@ -7,23 +7,23 @@ export function ProductoSlider({tipo}) {
   return (
     <>
 
-      <section className="font-Nunito  pb-8">
-        <h1 className="font-black text-4xl lg:text-9xl pl-3 font-ArchivoBlack lg:py-2 text-center tracking-widest uppercase">
+      <section className="font-Nunito  pb-8  flex flex-col gap-4">
+        <h1 className=" text-4xl lg:text-6xl pl-3 font-Archivo lg:py-2 text-center tracking-widest uppercase">
           {tipo}
         </h1>
 
         <div
           id="art"
-          className="flex flex-wrap gap-3  lg:max-w-7xl lg:mx-auto   justify-center "
+          className="flex flex-wrap gap-3  lg:max-w-7xl lg:mx-auto   justify-center"
         >
-          {productos.slice(0, 4).map(({ id, nombre, img, precio, tipo }) => (
+          {productos.slice(0, 5).map(({ id, nombre, img, precio, tipo }) => (
             <article
             key={id}
               id="articulo"
               className="bg-white rounded-lg  overflow-hidden  flex flex-col justify-between gap-2 animate-fade-in-up"
             >
                 <section >
-                    <div className="w-44 lg:w-72 overflow-hidden bg-[#f1f1f1]">
+                    <div className="w-44 lg:w-60 overflow-hidden bg-[#f1f1f1]">
                         <img className="w-full h-full object-cover " src={img} alt="" />
                    </div>
                 <div className=" text-center overflow-hidden flex flex-wrap flex-col w-44 lg:w-full  mx-auto pt-2">
@@ -49,7 +49,7 @@ export function ProductoSlider({tipo}) {
             </article>
           ))}
         </div>
-       <ImagenSlider nombre={"energizantes"} client:idle/>
+       <ImagenSlider nombre={tipo} client:idle/>
 
       </section>
     </>

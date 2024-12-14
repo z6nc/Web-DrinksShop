@@ -1,9 +1,9 @@
 export const Categorias=[
     {
     id:"energizante",
-    nombre:"energizantes",
+    nombre:"energizante",
     img:"https://tse3.mm.bing.net/th?id=OIG2.JHR0IxVljLAF9I5C1Yjg&pid=ImgGn",
-    imgSlider:"https://res.cloudinary.com/dleem7osr/image/upload/v1733534403/FondoEnergizante-removebg-preview_thb2gq.png",
+    imgSlider:"https://res.cloudinary.com/dleem7osr/image/upload/v1734218304/Bebida_Natural_2_d5nf45.png",
     beneficios : [
         "Aumenta la energía",
         "Mejora la concentración",
@@ -16,9 +16,9 @@ export const Categorias=[
 
 {
     id:"nutricional",
-    nombre:"nutricionales",
+    nombre:"nutricional",
     img:"https://tse2.mm.bing.net/th?id=OIG2.lnsxpIoDn_yS5Qer3hGw&pid=ImgGn",
-    imgSlider:"https://res.cloudinary.com/dleem7osr/image/upload/v1733534403/FondoEnergizante-removebg-preview_thb2gq.png",
+    imgSlider:"https://tse2.mm.bing.net/th?id=OIG2.lnsxpIoDn_yS5Qer3hGw&pid=ImgGn",
     beneficios : [
         "Aumenta la energía",
         "Mejora la concentración",
@@ -30,9 +30,9 @@ export const Categorias=[
 },
 {
     id:"hidratante",
-    nombre:"hidratantes",
+    nombre:"hidratante",
     img:"https://tse3.mm.bing.net/th?id=OIG2.F0PkVNnlExPennPU_qQp&pid=ImgGn",
-    imgSlider:"https://res.cloudinary.com/dleem7osr/image/upload/v1733534403/FondoEnergizante-removebg-preview_thb2gq.png",
+    imgSlider:"https://tse3.mm.bing.net/th?id=OIG2.F0PkVNnlExPennPU_qQp&pid=ImgGn",
     beneficios : [
         "Aumenta la energía",
         "Mejora la concentración",

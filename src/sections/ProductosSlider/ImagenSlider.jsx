@@ -4,14 +4,10 @@ export function ImagenSlider({nombre}) {
      
   return (
     <>
-      <section className=" flex  items-center justify-evenly">
-        <a href="">22 </a>
+      <section className=" w-full h-48 overflow-hidden rounded-md ">
       {Sliderimagen.map(({id ,imgSlider }) => (
-            <div className="w-[40%] " key={id}>
-                <img className="w-full h-full object-cover  " src={imgSlider} alt="" />
-            </div>
+                <img key={id} className="w-full h-full object-cover object-left-bottom   " src={imgSlider} alt="" />
           ))}
-      <a href="">22 </a>
       </section>
        
          

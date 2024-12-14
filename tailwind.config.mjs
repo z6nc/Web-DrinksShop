@@ -10,6 +10,20 @@ export default {
 				'Archivo': ['Archivo', 'sans-serif'],
 
 			  },
+			  keyframes: {
+				float: {
+				  '0%, 100%': { transform: 'translateY(0)' },
+				  '50%': { transform: 'translateY(-10px)' },
+				},
+				slideIn: {
+				  '0%': { opacity: '0', transform: 'translateX(-50%)' },
+				  '100%': { opacity: '1', transform: 'translateX(0)' },
+				},
+			  },
+			  animation: {
+				float: 'float 3s ease-in-out infinite',
+				slideIn: 'slideIn 1.5s ease-in-out ',
+			  },
 			 
 
 		},
