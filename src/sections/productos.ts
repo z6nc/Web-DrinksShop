@@ -3,34 +3,26 @@ export const Producto = [
   {
     id: 1,
     nombre: "Mango Splash",
-    tamaño: "1.5L",
+    tamaño: "500ml",
+    pack : "6 unidades",
     img: "https://res.cloudinary.com/dleem7osr/image/upload/v1733355043/MangoBebida-removebg-preview_oovd09.png",
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733355043/MangoBebida-removebg-preview_oovd09.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733355043/MangoBebida-removebg-preview_oovd09.png",
-    descripcion: "Refrescante bebida a base de mango con un toque tropical.",
-    beneficios :[
-      "Hidratación",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
-    precio: "14.00",
+    descripcion: "Una bebida refrescante elaborada con extracto natural de mango, rica en antioxidantes y vitaminas esenciales. Sin conservantes artificiales, es la opción perfecta para hidratarte de manera natural .",
+    precio: "19.99",
     categoria: "Botella",
     tipo: "hidratante",
   },
   {
     id: 2,
-    nombre: "Respawn Naranja Splash",
+    nombre: "Naranja Splash",
     tamaño: "500ml",
+    pack : "6 unidades",
     img: "https://res.cloudinary.com/dleem7osr/image/upload/v1733340286/BotellaEnergizanteN-removebg-preview_mge8w9.png",
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733340286/BotellaEnergizanteN-removebg-preview_mge8w9.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733340286/BotellaEnergizanteN-removebg-preview_mge8w9.png",
-    descripcion: "Bebida revitalizante hecha con jugo de naranja y jengibre.",
-    beneficios :[
-      "Hidratación",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
-    precio: "10.00",
+    descripcion: "Una bebida energizante con jugo natural de naranja, enriquecida con vitaminas C y B. Refresca, revitaliza y brinda la energía necesaria para mantenerte en acción durante todo el día.",
+    precio: "19.99",
     categoria: "Botella",
     tipo: "hidratante",
   },
@@ -38,17 +30,13 @@ export const Producto = [
   {
     id: 3,
     nombre: "Coconut Dew Splash",
-    tamaño: "1L",
+    tamaño: "200ml",
+    pack : "6 unidades",
     img: "https://res.cloudinary.com/dleem7osr/image/upload/v1733355671/CocoNuw-removebg-preview_hnv1rw.png",
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733355671/CocoNuw-removebg-preview_hnv1rw.png",
     imgimgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733355671/CocoNuw-removebg-preview_hnv1rw.png",
-    descripcion: "Bebida refrescante a base de coco natural para una hidratación óptima.",
-    beneficios :[
-      "Hidratación",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
-    precio: "16.00",
+    descripcion: "Una bebida refrescante y natural con agua de coco pura, rica en electrolitos y minerales esenciales. Hidrata, revitaliza y te mantiene energizado de manera saludable, sin aditivos artificiales.",
+    precio: "9.99",
     categoria: "Botella",
     tipo: "hidratante",
   },
@@ -56,33 +44,25 @@ export const Producto = [
     id: 4,
     nombre: "Jamaica Splash",
     tamaño: "500ml",
+    pack : "6 unidades",
     img: "https://res.cloudinary.com/dleem7osr/image/upload/v1733356357/JamaicaSplash-removebg-preview_u2zbkl.png",
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733356357/JamaicaSplash-removebg-preview_u2zbkl.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733356357/JamaicaSplash-removebg-preview_u2zbkl.png",
-    descripcion: "Infusión de flor de jamaica, refrescante y antioxidante.",
-    beneficios :[
-      "Hidratación",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
-    precio: "12.50",
+    descripcion: "Una bebida vibrante y natural, elaborada con extracto puro de flor de jamaica. Rica en antioxidantes y vitaminas, refresca, revitaliza y ofrece un sabor único y delicioso, sin aditivos artificiales.",
+    precio: "19.99",
     categoria: "Botella",
     tipo: "hidratante",
   },
   {
     id: 5,
     nombre: "Pineapple Splash",
-    tamaño: "1L",
+    tamaño: "500ml",
+    pack : "6 unidades",
     img: "https://res.cloudinary.com/dleem7osr/image/upload/v1733356101/BebidaPineaple-removebg-preview_a9xfgj.png",
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733356101/BebidaPineaple-removebg-preview_a9xfgj.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733356101/BebidaPineaple-removebg-preview_a9xfgj.png",
-    descripcion: "Bebida refrescante con jugo natural de piña, ideal para mantenerte hidratado.",
-    beneficios :[
-      "Hidratación",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
-    precio: "14.50",
+    descripcion: "Una bebida refrescante y natural, hecha con jugo puro de piña. Rica en vitaminas y antioxidantes, brinda un sabor tropical y revitalizante, ideal para energizar tu día de manera saludable.",
+    precio: "19.99",
     categoria: "Botella",
     tipo: "hidratante",
   },
@@ -93,13 +73,9 @@ export const Producto = [
     img: "https://res.cloudinary.com/dleem7osr/image/upload/v1733362560/BebidaLimonSplash-removebg-preview_mulr1k.png",
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733362560/BebidaLimonSplash-removebg-preview_mulr1k.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733362560/BebidaLimonSplash-removebg-preview_mulr1k.png",
-    descripcion: "Limonada refrescante con pepino y hierbabuena, perfecta para el calor.",
-    beneficios :[
-      "Hidratación",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
-    precio: "13.00",
+    descripcion: "Una bebida natural y revitalizante, elaborada con jugo fresco de limón. Rica en vitamina C y antioxidantes, ofrece un toque cítrico refrescante que energiza y mantiene tu cuerpo hidratado.",
+
+    precio: "19.99",
     categoria: "Botella",
     tipo: "hidratante",
   },
@@ -110,51 +86,38 @@ export const Producto = [
     id: 7,
     nombre: "Limonada Detox Power",
     tamaño: "500ml",
+    pack : "6 unidades",
     img: "https://res.cloudinary.com/dleem7osr/image/upload/v1733357634/BebidaLimonada-removebg-preview_cp4rft.png",
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733357634/BebidaLimonada-removebg-preview_cp4rft.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733357634/BebidaLimonada-removebg-preview_cp4rft.png",
-    descripcion: "Refrescante limonada con jengibre y menta para desintoxicar tu cuerpo.",
-    beneficios :[
-      "Energía",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
-    
-    precio: "12.00",
+    descripcion: " Una bebida energizante natural con limón fresco y extractos revitalizantes. Enriquecida con vitamina C y antioxidantes, proporciona energía sostenida y ayuda a desintoxicar el cuerpo.",
+    precio: "19.99",
     categoria: "Botella",
     tipo: "energizante",
   },
   {
     id: 8,
     nombre: "MatchaZen Power",
-    tamaño: "250g",
+    tamaño: "500ml",
+    pack : "6 unidades",
     img: "https://res.cloudinary.com/dleem7osr/image/upload/v1733363191/MatchPowerBebida-removebg-preview_sfm20p.png",
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733363191/MatchPowerBebida-removebg-preview_sfm20p.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733363191/MatchPowerBebida-removebg-preview_sfm20p.png",
-    descripcion: "Polvo de té verde japonés, ideal para bebidas energizantes y antioxidantes.",
-    beneficios :[
-      "Energía",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
-    precio: "20.00",
+    descripcion: "Una bebida energizante natural a base de té matcha premium, rica en antioxidantes y L-teanina. Brinda energía limpia y sostenida.",
+    precio: "19.99",
     categoria: "Polvo",
     tipo: "energizante",
   },
   {
     id: 9,
     nombre: " Rush de Cacao Power",
-    tamaño: "300g",
+    tamaño: "500ml",
+    pack : "6 unidades",
     img: "https://res.cloudinary.com/dleem7osr/image/upload/v1733354479/CacaoBebida-removebg-preview_uxrx2q.png",
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733354479/CacaoBebida-removebg-preview_uxrx2q.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733354479/CacaoBebida-removebg-preview_uxrx2q.png",
-    descripcion: "Cacao orgánico combinado con superalimentos para mayor energía.",
-    beneficios :[
-      "Energía",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
-    precio: "28.00",
+    descripcion: "Una bebida energizante natural hecha con cacao puro, rica en antioxidantes, magnesio y teobromina. Proporciona un impulso de energía duradero, mejora tu estado de ánimo.",
+    precio: "19.99",
     categoria: "Polvo",
     tipo: "energizante",
   },
@@ -162,15 +125,11 @@ export const Producto = [
     id: 10,
     nombre: "Guaraná Energy Power",
     tamaño: "500ml",
+    pack : "6 unidades",
     img: "https://res.cloudinary.com/dleem7osr/image/upload/v1733358481/GuaranaPowers-removebg-preview_lkh9rw.png",
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733358481/GuaranaPowers-removebg-preview_lkh9rw.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733358481/GuaranaPowers-removebg-preview_lkh9rw.png",
     descripcion: "Bebida energizante natural con guaraná, ideal para aumentar el rendimiento.",
-    beneficios :[
-      "Energía",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
     precio: "18.00",
     categoria: "Botella",
     tipo: "energizante",
@@ -183,11 +142,7 @@ export const Producto = [
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733362954/DragonFruit-removebg-preview_tdbshb.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733623537/DragonFruit2-removebg-preview_coa03g.png",
     descripcion: "Matcha latte en polvo, con un toque energizante para tus mañanas.",
-    beneficios :[
-      "Energía",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
+ 
     precio: "22.00",
     categoria: "Polvo",
     tipo: "energizante",
@@ -200,11 +155,7 @@ export const Producto = [
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733354711/BebidaMatchaLate-removebg-preview_ab7awx.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733354711/BebidaMatchaLate-removebg-preview_ab7awx.png",
     descripcion: "Matcha latte en polvo, con un toque energizante para tus mañanas.",
-    beneficios :[
-      "Energía",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
+  
     precio: "22.00",
     categoria: "Polvo",
     tipo: "energizante",
@@ -220,11 +171,7 @@ export const Producto = [
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733361306/ProteicoVanilla-removebg-preview_tsq8qk.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733361306/ProteicoVanilla-removebg-preview_tsq8qk.png",
     descripcion: "Bebida saludable hecha a base de vegetales verdes, ideal para eliminar toxinas.",
-    beneficios :[
-      "Proteínas",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
+  
     precio: "15.00",
     categoria: "Botella",
     tipo: "nutricional",
@@ -237,11 +184,7 @@ export const Producto = [
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733360483/ProteicoBanana-removebg-preview_q4ga1p.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733360483/ProteicoBanana-removebg-preview_q4ga1p.png",
     descripcion: "Bebida alta en proteínas, ideal para recuperar energía después de entrenar.",
-    beneficios :[
-      "Proteínas",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
+  
     precio: "18.00",
     categoria: "Botella",
     tipo: "nutricional",
@@ -254,11 +197,7 @@ export const Producto = [
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733361550/ProteicoMoraAzul-removebg-preview_akbmsu.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733361550/ProteicoMoraAzul-removebg-preview_akbmsu.png",
     descripcion: "Polvo detox para preparar con agua o jugo. Ideal para limpiar el organismo.",
-    beneficios :[
-      "Proteínas",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
+
     precio: "25.00",
     categoria: "Polvo",
     tipo: "nutricional",
@@ -271,11 +210,7 @@ export const Producto = [
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733361742/ProteicoCoco-removebg-preview_k7tewl.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733361742/ProteicoCoco-removebg-preview_k7tewl.png",
     descripcion: "Proteína en polvo a base de cacao y plantas. Perfecta para dietas veganas.",
-    beneficios :[
-      "Proteínas",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
+ 
     precio: "35.00",
     categoria: "Polvo",
     tipo: "nutricional",
@@ -288,11 +223,7 @@ export const Producto = [
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733360945/ProteicoFrutosRojos-removebg-preview_spp8kl.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733360945/ProteicoFrutosRojos-removebg-preview_spp8kl.png",
     descripcion: "Bebida rica en antioxidantes hecha con fresas, arándanos y frambuesas.",
-    beneficios :[
-      "Proteínas",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
+ 
     precio: "16.00",
     categoria: "Botella",
     tipo: "nutricional",
@@ -305,11 +236,7 @@ export const Producto = [
     imgDos: "https://res.cloudinary.com/dleem7osr/image/upload/v1733363539/ProteicoAlmendra-removebg-preview_fwmyt8.png",
     imgTres: "https://res.cloudinary.com/dleem7osr/image/upload/v1733363539/ProteicoAlmendra-removebg-preview_fwmyt8.png",
     descripcion: "Bebida rica en antioxidantes hecha con fresas, arándanos y frambuesas.",
-    beneficios :[
-      "Proteínas",
-      "Vitaminas",
-      "Antioxidantes"
-    ],
+ 
     precio: "16.00",
     categoria: "Botella",
     tipo: "nutricional",

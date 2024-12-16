@@ -1,7 +1,7 @@
 
 export function TipoProductoWait() {
     const GostProducto = {
-        id: 1,
+        id: 0,
         nombre: "",
         img: "",
       };
@@ -9,9 +9,9 @@ export function TipoProductoWait() {
   return (
     <>
       <section className="flex flex-wrap gap-3 lg:gap-6  lg:max-w-4xl lg:mx-auto   justify-between mx-3 animate-pulse">
-        {ArrayProductos.map((producto) => (
+        {ArrayProductos.map((Gost) => (
           <article
-          key={producto.id}
+          key={Gost.id}
             id="articulo"
             className="bg-white rounded-lg  overflow-hidden  flex flex-col justify-between gap-2  "
           >

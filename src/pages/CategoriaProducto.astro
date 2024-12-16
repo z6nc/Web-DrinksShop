@@ -4,6 +4,7 @@ import {NavbarPrincipal} from "../sections/navbars/navbar.jsx";
 import {ProductoHero} from "../sections/CategoriaProducto/ProductoFiltro.jsx";
 import Footer from "../sections/footer.astro";
 import {TipoProducto} from "../sections/CategoriaProducto/TipoProducto.jsx";
+import { BannerTipoProducto } from "../sections/CategoriaProducto/BannerTipoProducto";
 
 ---
 
@@ -12,9 +13,13 @@ import {TipoProducto} from "../sections/CategoriaProducto/TipoProducto.jsx";
   <header  class="relative">
     <NavbarPrincipal posicion={"lg:relative"} bg={"bg-white"}  client:idle />
   </header>
-  <main class="animate-blurred-fade-in">
+  <main class="animate-blurred-fade-in ">
     <ProductoHero client:idle />
-    <TipoProducto client:idle />
+    <div class="flex flex-col justify-center items-center gap-4">
+      <BannerTipoProducto client:idle />
+      <TipoProducto client:idle />
+
+    </div>
   </main>
   <footer>
     <Footer />

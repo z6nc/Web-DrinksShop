@@ -9,7 +9,7 @@ export const Categorias=[
         "Mejora la concentración",
         "Aumenta la resistencia",
         "Mejora el rendimiento físico",
-        "Mejora la memoria"
+        "Recuperación muscular"
     ],
     },
     
@@ -20,11 +20,11 @@ export const Categorias=[
     img:"https://tse2.mm.bing.net/th?id=OIG2.lnsxpIoDn_yS5Qer3hGw&pid=ImgGn",
     imgSlider:"https://res.cloudinary.com/dleem7osr/image/upload/v1734368390/Bebida_Natural_3_eb1okv.png",
     beneficios : [
-        "Aumenta la energía",
-        "Mejora la concentración",
-        "Aumenta la resistencia",
-        "Mejora el rendimiento físico",
-        "Mejora la memoria"
+        "Recuperación muscular",
+        "Aporte de energía sostenible",
+        "Reducción del desgaste muscular",
+        "Reducción del estrés oxidativo",
+        "Salud ósea"
     ],
 
 },
@@ -34,11 +34,11 @@ export const Categorias=[
     img:"https://tse3.mm.bing.net/th?id=OIG2.F0PkVNnlExPennPU_qQp&pid=ImgGn",
     imgSlider:"https://res.cloudinary.com/dleem7osr/image/upload/v1734369537/Bebida_Natural_6_dp40lc.png",
     beneficios : [
-        "Aumenta la energía",
-        "Mejora la concentración",
-        "Aumenta la resistencia",
-        "Mejora el rendimiento físico",
-        "Mejora la memoria"
+        "Hidratación profunda",
+        "Fuente de antioxidantes",
+        "Frescura natural",
+        "nergía ligera y sostenida",
+        "Sabor auténtico y natural"
     ],
 
 },

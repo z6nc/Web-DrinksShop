@@ -2,14 +2,15 @@ import { Rating } from "./Rating";
 import { Contador } from "./Contador";
 import { Producto } from "../productos";
 import { useState, useEffect } from "react";
+import { Categorias } from "../categoria";
 
 export function DetalleProducto() {
   const [filtroProductos, setEncontrado] = useState(null);
+  const [beneficios, setBeneficios] = useState(null);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     let id = parseInt(urlParams.get("id"), 10);
-
     if (id) {
       const filtroProducto = Producto.find((producto) => producto.id === id);
       if (filtroProducto) {
@@ -22,11 +23,25 @@ export function DetalleProducto() {
     }
   }, []);
 
+  useEffect(() => {
+    if (filtroProductos) {
+      const categoria = Categorias.find(
+        (categoria) => categoria.id === filtroProductos.tipo
+      );
+      setBeneficios(categoria.beneficios);
+      console.log(categoria.beneficios);
+    }
+  }, [filtroProductos]);
+  
+
+
+
+
   if (!filtroProductos) {
     return <p>Buscando producto...</p>;
   }
 
-  const { nombre, tamaño, img, imgDos, imgTres, descripcion, beneficios, precio } = filtroProductos;
+  const { nombre, tamaño, img, imgDos, imgTres, descripcion,  precio } = filtroProductos;
 
   return (
     <div className="flex flex-wrap mt-10 gap-5">
@@ -45,11 +60,11 @@ export function DetalleProducto() {
           <img className="w-96 bg-[#f1f1f1]" src={imgDos} alt={`otra imagen de bebida ${nombre}`} />
         </div>
       </article>
-      <div className="flex flex-col gap-3 max-w-[20rem] pl-3">
-        <div className="flex flex-col gap-7 border-b border-gray-300 pb-6">
+      <div className="flex flex-col gap-3 max-w-2xl mx-3 lg:mx-0 lg:max-w-[22rem]  lg:pl-3">
+        <div className="flex flex-col gap-7 border-b border-gray-300 pb-6 ">
           <div>
-            <h1 className="text-2xl font-bold">{nombre}</h1>
-            <p>{tamaño}</p>
+            <h1 className="text-3xl font-bold">{nombre}</h1>
+            <p className="text-lg">{tamaño}</p>
           </div>
           <p className="text-3xl font-bold text-gray-700">${precio}</p>
           <Rating />
@@ -64,9 +79,11 @@ export function DetalleProducto() {
             <p className="text-sm">{descripcion}</p>
           </div>
           <ul className="text-sm list-disc ml-4 flex flex-col gap-3">
-            {beneficios.map((beneficio, index) => (
-              <li key={index}>{beneficio}</li>
-            ))}
+              {
+                beneficios && beneficios.map((beneficio, index) => (
+                  <li key={index}>{beneficio}</li>
+                ))
+              }
           </ul>
         </div>
       </div>

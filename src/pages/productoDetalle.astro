@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import {NavbarPrincipal} from "../sections/navbars/navbar.jsx";
 import {DetalleProducto} from "../sections/DetalleProducto/DetalleProducto.jsx";
 import {ProductosRecomendar} from "../sections/ProductoRandom/ProducosRecomendados.jsx";
-
+import { ComentariosUser } from "../sections/RatingComentarios/ComentariosUser";
 import Footer from "../sections/footer.astro";
 
 ---
@@ -17,6 +17,8 @@ import Footer from "../sections/footer.astro";
       <DetalleProducto client:idle/>
       <!-- Productos Recomendados -->
        <ProductosRecomendar client:idle/>
+      <!-- Comentarios -->
+      <ComentariosUser />
     </main>
     <footer>
       <Footer />
