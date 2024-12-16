@@ -3,7 +3,7 @@ export const Categorias=[
     id:"energizante",
     nombre:"energizante",
     img:"https://tse3.mm.bing.net/th?id=OIG2.JHR0IxVljLAF9I5C1Yjg&pid=ImgGn",
-    imgSlider:"https://res.cloudinary.com/dleem7osr/image/upload/v1734218304/Bebida_Natural_2_d5nf45.png",
+    imgSlider:"https://res.cloudinary.com/dleem7osr/image/upload/v1734368772/Bebida_Natural_5_wl0dpm.png",
     beneficios : [
         "Aumenta la energía",
         "Mejora la concentración",
@@ -18,7 +18,7 @@ export const Categorias=[
     id:"nutricional",
     nombre:"nutricional",
     img:"https://tse2.mm.bing.net/th?id=OIG2.lnsxpIoDn_yS5Qer3hGw&pid=ImgGn",
-    imgSlider:"https://tse2.mm.bing.net/th?id=OIG2.lnsxpIoDn_yS5Qer3hGw&pid=ImgGn",
+    imgSlider:"https://res.cloudinary.com/dleem7osr/image/upload/v1734368390/Bebida_Natural_3_eb1okv.png",
     beneficios : [
         "Aumenta la energía",
         "Mejora la concentración",
@@ -32,7 +32,7 @@ export const Categorias=[
     id:"hidratante",
     nombre:"hidratante",
     img:"https://tse3.mm.bing.net/th?id=OIG2.F0PkVNnlExPennPU_qQp&pid=ImgGn",
-    imgSlider:"https://tse3.mm.bing.net/th?id=OIG2.F0PkVNnlExPennPU_qQp&pid=ImgGn",
+    imgSlider:"https://res.cloudinary.com/dleem7osr/image/upload/v1734369537/Bebida_Natural_6_dp40lc.png",
     beneficios : [
         "Aumenta la energía",
         "Mejora la concentración",

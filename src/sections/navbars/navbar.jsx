@@ -31,7 +31,7 @@ export function NavbarPrincipal({posicion , bg}) {
     <>
       <nav
         id="Navbar"
-        className={`text-black  w-full flex justify-evenly px-3 py-3 lg:h-[80px] items-center z-30 backdrop-blur-3xl  ${posicion} ${bg}`}
+        className={`text-black fixed  w-full flex justify-evenly px-3 py-3 lg:h-[80px] items-center z-30 backdrop-blur-2xl hover:bg-white transition-all duration-150 ease-in-out ${posicion} ${bg}`}
 
       >
         <ul className="lg:flex tracking-wide font-medium   hidden">
