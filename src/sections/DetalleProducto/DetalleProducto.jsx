@@ -29,7 +29,6 @@ export function DetalleProducto() {
         (categoria) => categoria.id === filtroProductos.tipo
       );
       setBeneficios(categoria.beneficios);
-      console.log(categoria.beneficios);
     }
   }, [filtroProductos]);
   

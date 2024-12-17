@@ -62,7 +62,7 @@ export function NavbarMovil({ Wait }) {
     setOpen(Wait);
   }, [Wait]);
 
-  const StyleNavbar = `${StyleNavbarBase} ${open ? StyleOpen : StyleClose}`;
+  const StyleNavbar = `${open ? StyleOpen : StyleClose} ${StyleNavbarBase} `;
 
   return (
     <nav className={StyleNavbar}>
