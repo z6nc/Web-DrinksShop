@@ -31,7 +31,7 @@ export const Categorias=[
 {
     id:"hidratante",
     nombre:"hidratante",
-    img:"https://tse2.mm.bing.net/th?id=OIG1.1HeN76GtLKe6ZW8WS3Kx&pid=ImgGn",
+    img:"https://res.cloudinary.com/dleem7osr/image/upload/v1734459579/EnergixHidratante_uyvdv9.webp",
     imgSlider:"https://res.cloudinary.com/dleem7osr/image/upload/v1734369537/Bebida_Natural_6_dp40lc.png",
     beneficios : [
         "Hidratación profunda",

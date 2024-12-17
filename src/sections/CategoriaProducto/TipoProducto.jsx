@@ -33,9 +33,10 @@ export function TipoProducto() {
               <section>
                 <div className=" w-44 lg:w-full  overflow-hidden bg-[#f1f1f1]">
                   <img
-                    className=" w-full lg:w-72 h-full object-cover "
+                     lazy="loading"
+                    className=" w-full lg:w-72 h-full object-cover  "
                     src={img}
-                    alt=""
+                    alt={`Imagen de la bebida ${nombre}`}
                   />
                 </div>
                 <div className=" text-center overflow-hidden flex flex-wrap flex-col w-44 lg:w-full  mx-auto pt-2">

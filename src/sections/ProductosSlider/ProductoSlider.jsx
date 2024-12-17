@@ -24,7 +24,7 @@ export function ProductoSlider({tipo}) {
             >
                 <section >
                     <div className="w-44 lg:w-60 overflow-hidden bg-[#f1f1f1]">
-                        <img className="w-full h-full object-cover " src={img} alt="" />
+                        <img className="w-full h-full object-cover " src={img} alt={`Imagen de la bebida ${nombre}`}  lazy="loading" />
                    </div>
                 <div className=" text-center overflow-hidden flex flex-wrap flex-col w-44 lg:w-full  mx-auto pt-2">
                     <h4 className=" text-sm lg:text-[15px]   uppercase ">

@@ -45,9 +45,9 @@ export function DetalleProducto() {
   return (
     <div className="flex flex-wrap mt-10 gap-5">
       <article className="grid grid-cols-2 gap-2 overflow-hidden">
-        <div className="w-full col-span-2">
+      <div className="w-full  h-[350px] lg:h-[700px] col-span-2 overflow-hidden">
           <img
-            className="w-full h-96 object-contain bg-[#f1f1f1]"
+            className="w-full h-full  object-cover bg-[#f1f1f1]"
             src={imgTres}
             alt={`imagen de bebida ${nombre}`}
           />
@@ -56,10 +56,11 @@ export function DetalleProducto() {
           <img className="w-96 bg-[#f1f1f1]" src={img} alt={`imagen secundaria de bebida ${nombre}`} />
         </div>
         <div className="w-full">
-          <img className="w-96 bg-[#f1f1f1]" src={imgDos} alt={`otra imagen de bebida ${nombre}`} />
+          <img className="w-96 bg-[#f1f1f1]" src={imgDos} alt={` imagen de bebida ${nombre}`} />
         </div>
+        
       </article>
-      <div className="flex flex-col items-center lg:items-start gap-4 mx-3 lg:mx-0 lg:max-w-[22rem]  lg:pl-3">
+      <div className="flex flex-col items-center lg:items-start gap-4 mx-auto lg:mx-0 lg:max-w-[22rem]  lg:pl-3">
         <div className="flex flex-col items-center lg:items-stretch gap-4 border-b border-gray-300 pb-6 ">
           <div>
             <h1 className="text-xl lg:text-3xl font-medium lg:font-bold uppercase">{nombre}</h1>
