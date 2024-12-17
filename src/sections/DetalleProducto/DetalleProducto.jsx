@@ -40,7 +40,7 @@ export function DetalleProducto() {
     return <p>Buscando producto...</p>;
   }
 
-  const { nombre, tamaño, img, imgDos, imgTres, descripcion,  precio } = filtroProductos;
+  const { nombre, tamaño, img, imgDos, imgTres, pack,  precio } = filtroProductos;
 
   return (
     <div className="flex flex-wrap mt-10 gap-5">
@@ -62,9 +62,13 @@ export function DetalleProducto() {
       </article>
       <div className="flex flex-col items-center lg:items-start gap-4 mx-auto lg:mx-0 lg:max-w-[22rem]  lg:pl-3">
         <div className="flex flex-col items-center lg:items-stretch gap-4 border-b border-gray-300 pb-6 ">
-          <div>
+          <div className="text-center lg:text-start">
             <h1 className="text-xl lg:text-3xl font-medium lg:font-bold uppercase">{nombre}</h1>
-            <p className=" text-gray-500 text-center lg:text-start ">{tamaño}</p>
+            <div className="inline-flex gap-2 ">
+            <p className=" text-gray-500  ">{tamaño}</p> 
+              /
+            <p className=" text-gray-500  ">{pack}</p>
+            </div>
           </div>
           <Rating />
           <p className="text-3xl font-extralight font-ArchivoBlack ">${precio}</p>

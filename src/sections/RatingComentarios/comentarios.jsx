@@ -2,14 +2,13 @@ import { Rating } from "../DetalleProducto/Rating";
 export function Comentarios() {
   return (
     <>
-     
 <article className="md:gap-6 md:grid md:grid-cols-3 my-8 border-b-[1px] border-gray-200 py-9">
     <div>
         <div className="flex items-center mb-6">
             {/* <img class="w-10 h-10 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt=""> */}
-            <img className="w-10 h-10 rounded-full" src="https://unavatar.io/github/z6nc" alt="" />
+            <img className="w-10 h-10 rounded-full " src="https://unavatar.io/github/z6nc" alt="" />
             <div className="ms-4 font-medium text-black">
-                <p>Vengadores</p>
+                <p>Cristiano Ronaldo</p>
                 <Rating />
             </div>
         </div>
