@@ -1,5 +1,27 @@
 import React, { useEffect, useState } from "react";
 
+const NavbarLinks = [{
+  name: "HOME",
+  url: "/",
+},
+{
+  name: "PRODUCTOS",
+  url: "/productosCompletos",
+},
+{
+  name: "CATEGORIAS",
+  url: "/",
+},
+{
+  name: "ABOUT",
+  url: "/about",
+},
+{
+  name: "INICIA SESION",
+  url: "/login",
+},
+];
+
 const SvgExit = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -50,17 +72,16 @@ export function NavbarMovil({ Wait }) {
           <span className="text-2xl font-bold text-black">{SvgExit}</span>
         </button>
 
-        {/* Links de navegación */}
         <div className="flex flex-col w-auto my-10">
           {/* Arreglar el li para quie tengan sus respectivos url */}
-          {["HOME", "PRODUCTOS", "CATEGORIAS", "ABOUT", "INICIA SESION"].map(
+          {NavbarLinks.map(
             (link, index) => (
               <a
                 key={index}
                 className="border-[#cfcece] border-b-[1px] font-medium text-[15px] py-4"
-                href="#"
+                href={link.url}
               >
-                {link}
+                {link.name}
               </a>
             )
           )}

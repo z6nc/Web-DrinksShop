@@ -56,12 +56,15 @@ export function NavbarPrincipal({posicion , bg}) {
         <button className="block lg:hidden " onClick={()=>setIdle(!idle)}>
             {SvgHamburguer}
         </button>
+        <a href="/" >
+
         <h2
           id="navbarH2"
-          className="text-[30px] lg:text-[36px] font-ArchivoBlack text-black font-black cursor-default  hover:scale-105 transition  uppercase"
+          className="text-[30px] lg:text-[36px] font-ArchivoBlack text-black font-black  hover:scale-105 transition  uppercase "
         >
         EnergiX
         </h2>
+        </a>
 
         <ul className="lg:flex tracking-wide px-5  font-light hidden">
           <li>

@@ -1,16 +1,16 @@
 ---
-const StyleArticle=" relative overflow-hidden backdrop-brightness-50 rounded-md flex items-center justify-center  ";
-const StyleH3=" z-50 absolute text-center  text-[22px] customShadow  lg:text-2xl  text-white  uppercase font-ArchivoBlack ";
-const StyleImg=" w-full h-full object-cover absolute inset-0   trasition duration-500 ease-in-out ";
+const StyleArticle="  overflow-hidden  ";
+const StyleImg=" w-full h-full object-cover   trasition duration-500 ease-in-out ";
 import {Categorias} from "../sections/categoria.js";
 ---
-<section class="grid grid-cols-2 gap-4  lg:grid-cols-3 lg:h-64 h-56 font-Protest my-3 mx-3  lg:mx-0">
+<section class="grid grid-cols-3 gap-4  lg:grid-cols-3 lg:h-64 h-56  my-3 mx-3  lg:mx-0">
    {
          Categorias.map((categoria)=>{
               return(
                 <article class={StyleArticle}>
-                     <a class={StyleH3} href={`/CategoriaProducto?id=${categoria.id}`}><h3 >{categoria.nombre}</h3></a> 
+                      <a href={`/CategoriaProducto?id=${categoria.id}`}>
                       <img class={StyleImg} src={categoria.img} alt={`Imagen de ${categoria.nombre}`}/>
+                  </a> 
                 </article>
               )
          })
@@ -19,10 +19,7 @@ import {Categorias} from "../sections/categoria.js";
 </section>
 
 <style>
-      .customShadow {
-    -webkit-text-stroke: 1px rgb(0, 0, 0); 
-    text-stroke: 1px rgb(0, 0, 0);
-}
+
 article:hover img {
     transform: scale(1.1);
 }

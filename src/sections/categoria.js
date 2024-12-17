@@ -2,7 +2,7 @@ export const Categorias=[
     {
     id:"energizante",
     nombre:"energizante",
-    img:"https://tse3.mm.bing.net/th?id=OIG2.JHR0IxVljLAF9I5C1Yjg&pid=ImgGn",
+    img:"https://tse2.mm.bing.net/th?id=OIG2.26zykTgSnlhTlQhxyPzv&pid=ImgGn",
     imgSlider:"https://res.cloudinary.com/dleem7osr/image/upload/v1734368772/Bebida_Natural_5_wl0dpm.png",
     beneficios : [
         "Aumenta la energía",
@@ -17,7 +17,7 @@ export const Categorias=[
 {
     id:"nutricional",
     nombre:"nutricional",
-    img:"https://tse2.mm.bing.net/th?id=OIG2.lnsxpIoDn_yS5Qer3hGw&pid=ImgGn",
+    img:"https://tse4.mm.bing.net/th?id=OIG3.Y2F0i8C04I9dwyhGdvcH&pid=ImgGn",
     imgSlider:"https://res.cloudinary.com/dleem7osr/image/upload/v1734368390/Bebida_Natural_3_eb1okv.png",
     beneficios : [
         "Recuperación muscular",
@@ -31,7 +31,7 @@ export const Categorias=[
 {
     id:"hidratante",
     nombre:"hidratante",
-    img:"https://tse3.mm.bing.net/th?id=OIG2.F0PkVNnlExPennPU_qQp&pid=ImgGn",
+    img:"https://tse2.mm.bing.net/th?id=OIG1.1HeN76GtLKe6ZW8WS3Kx&pid=ImgGn",
     imgSlider:"https://res.cloudinary.com/dleem7osr/image/upload/v1734369537/Bebida_Natural_6_dp40lc.png",
     beneficios : [
         "Hidratación profunda",

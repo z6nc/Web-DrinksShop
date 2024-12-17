@@ -60,25 +60,22 @@ export function DetalleProducto() {
           <img className="w-96 bg-[#f1f1f1]" src={imgDos} alt={`otra imagen de bebida ${nombre}`} />
         </div>
       </article>
-      <div className="flex flex-col gap-3 max-w-2xl mx-3 lg:mx-0 lg:max-w-[22rem]  lg:pl-3">
-        <div className="flex flex-col gap-7 border-b border-gray-300 pb-6 ">
+      <div className="flex flex-col items-center lg:items-start gap-4 mx-3 lg:mx-0 lg:max-w-[22rem]  lg:pl-3">
+        <div className="flex flex-col items-center lg:items-stretch gap-4 border-b border-gray-300 pb-6 ">
           <div>
-            <h1 className="text-3xl font-bold">{nombre}</h1>
-            <p className="text-lg">{tamaño}</p>
+            <h1 className="text-xl lg:text-3xl font-medium lg:font-bold uppercase">{nombre}</h1>
+            <p className=" text-gray-500 text-center lg:text-start ">{tamaño}</p>
           </div>
-          <p className="text-3xl font-bold text-gray-700">${precio}</p>
           <Rating />
+          <p className="text-3xl font-extralight font-ArchivoBlack ">${precio}</p>
           <Contador />
-          <button className="font-bold border border-black bg-black text-white px-2 py-3 hover:bg-white hover:text-black transition-all duration-100">
+          <button className="font-bold border border-black bg-black text-white px-32 lg:px-2 py-3 hover:bg-white hover:text-black transition-all duration-100">
             ADD TO CART
           </button>
         </div>
         <div className="text-gray-500 flex gap-3 flex-col">
-          <div>
-            <h2 className="font-bold">DESCRIPCIÓN</h2>
-            <p className="text-sm">{descripcion}</p>
-          </div>
-          <ul className="text-sm list-disc ml-4 flex flex-col gap-3">
+            <h2 className="font-bold">BENEFICIOS</h2>
+          <ul className="text-sm list-disc ml-4 flex flex-col gap-5">
               {
                 beneficios && beneficios.map((beneficio, index) => (
                   <li key={index}>{beneficio}</li>

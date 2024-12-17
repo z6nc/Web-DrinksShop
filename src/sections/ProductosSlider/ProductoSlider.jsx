@@ -8,7 +8,7 @@ export function ProductoSlider({tipo}) {
     <>
 
       <section className="font-Nunito  pb-8  flex flex-col gap-4">
-        <h1 className=" text-4xl lg:text-6xl pl-3 font-Archivo lg:py-2 text-center tracking-widest uppercase">
+        <h1 className=" text-5xl lg:text-7xl  font-Archivo lg:py-2 text-center tracking-widest uppercase">
           {tipo}
         </h1>
 
@@ -27,20 +27,20 @@ export function ProductoSlider({tipo}) {
                         <img className="w-full h-full object-cover " src={img} alt="" />
                    </div>
                 <div className=" text-center overflow-hidden flex flex-wrap flex-col w-44 lg:w-full  mx-auto pt-2">
-                    <h4 className="  text-[15px]   uppercase ">
+                    <h4 className=" text-sm lg:text-[15px]   uppercase ">
                     {nombre}
                     </h4>
                     <div className="inline-flex items-center gap-3 justify-center  text-gray-600 py-1">
                     <p>{SvgTipos[tipo]}</p>/
-                    <h3 className="  tracking-wider ">${precio}</h3>
+                    <h3 className="  tracking-wider text-sm ">${precio}</h3>
                     </div>
                 </div>
                 </section>
              
 
-              <button className=" w-full h-9 bg-black border-[1px] border-black  text-white font-ArchivoBlack hover:bg-white hover:text-black transition ">
+              <button className=" w-full h-9 bg-black border-[1px] border-black  text-white  hover:bg-white hover:text-black transition ">
                 <a
-                  className=" text-xs lg:text-sm  my-4 font-bold"
+                  className=" text-xs lg:text-sm  my-4 font-bold "
                   href={`productoDetalle?id=${id}`}
                 >
                    MORE INFO

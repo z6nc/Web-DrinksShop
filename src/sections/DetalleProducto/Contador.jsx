@@ -33,7 +33,7 @@ export function Contador() {
 
   return (
     <>
-      <div className=" inline-flex items-center gap-6 w-32 border-[1px] border-black px-4 py-2">
+      <div className=" inline-flex items-center gap-6 w-32 border-[1px] border-black px-4 py-2 text-gray-500">
         {contador > 1 ? (
           <button className="" onClick={() => setContador(contador - 1)}>
             <SvgMinus />
