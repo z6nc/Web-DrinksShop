@@ -11,19 +11,19 @@ export default {
 
 			  },
 			  keyframes: {
-				float: {
-				  '0%, 100%': { transform: 'translateY(0)' },
-				  '50%': { transform: 'translateY(-10px)' },
-				},
+			
 				slideIn: {
 				  '0%': { opacity: '0', transform: 'translateX(-50%)' },
 				  '100%': { opacity: '1', transform: 'translateX(0)' },
 				},
 			  },
 			  animation: {
-				float: 'float 3s ease-in-out infinite',
 				slideIn: 'slideIn 1.5s ease-in-out ',
 			  },
+			  dropShadow: {
+				'3xl': '0 2px 3px rgba(0, 0, 0, 1)',
+				
+			  }
 			 
 
 		},

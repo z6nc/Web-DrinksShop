@@ -22,7 +22,7 @@ const SvgHamburguer = (
 
 );
 
-export function NavbarPrincipal({posicion , bg}) {
+export function NavbarPrincipal({posicion }) {
  
 
   const [idle, setIdle] = useState(false);
@@ -31,55 +31,37 @@ export function NavbarPrincipal({posicion , bg}) {
     <>
       <nav
         id="Navbar"
-        className={`text-black fixed  w-full flex justify-evenly px-3 py-3 lg:h-[80px] items-center z-30 backdrop-blur-2xl hover:bg-white transition-all duration-150 ease-in-out ${posicion} ${bg}`}
+        className={`text-black lg:text-white fixed  w-full flex justify-between px-6 py-3 lg:h-[90px]  z-30  items-center bg-white   transition-all duration-150 ease-in-out ${posicion}`}
 
       >
-        <ul className="lg:flex tracking-wide font-medium   hidden">
-          <li>
-            <a className={Stylelinks} href="/">
-              HOME
-            </a>
-          </li>
-          <li className="mx-4">
-            <a className={Stylelinks} href="/productosCompletos">
-              NUESTROS PRODUCTOS
-            </a>
-          </li>
-          <li>
-            <a className={Stylelinks} href="">
-              CATEGORIA
-            </a>
-          </li>
-        </ul>
-
+      
         {/* <!-- Boton responsive navbar --> */}
         <button className="block lg:hidden " onClick={()=>setIdle(!idle)}>
             {SvgHamburguer}
         </button>
-        <a href="/" >
-
-        <h2
-          id="navbarH2"
-          className="text-[30px] lg:text-[36px] font-ArchivoBlack text-black font-black  hover:scale-105 transition  uppercase "
-        >
-        EnergiX
-        </h2>
+        <a href="/"  className=" lg:pt-6 lg:pb-4">
+          <img className="w-16 lg:w-24 drop-shadow-3xl hover:scale-105 transition-all duration-75 ease-in-out  " src="https://res.cloudinary.com/dleem7osr/image/upload/v1734559843/imagen_2024-12-18_170959691-removebg-preview_lgpfrn.png" alt="" />
         </a>
 
-        <ul className="lg:flex tracking-wide px-5  font-light hidden">
+        <ul className="lg:flex tracking-wide  font-light hidden">
+        <li>
+            <a className={Stylelinks} href="/">
+              HOME
+            </a>
+          </li>
           <li>
-            <a className={Stylelinks} href="">
+            <a className={Stylelinks} href="/About">
               ABOUT
             </a>
           </li>
           <li>
-            <a className={Stylelinks} href="">
+            <a className={Stylelinks} href="/">
               USUARIO
             </a>
           </li>
           <li>
-            <a className={Stylelinks} href="">
-              CARRITO COMPRA
+            <a className={Stylelinks} href="/">
+             CARRITO
             </a>
           </li>
         </ul>

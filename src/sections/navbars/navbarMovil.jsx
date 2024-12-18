@@ -5,20 +5,16 @@ const NavbarLinks = [{
   url: "/",
 },
 {
-  name: "PRODUCTOS",
-  url: "/productosCompletos",
-},
-{
   name: "CATEGORIAS",
   url: "/",
 },
 {
   name: "ABOUT",
-  url: "/about",
+  url: "/About",
 },
 {
   name: "INICIA SESION",
-  url: "/login",
+  url: "/",
 },
 ];
 
@@ -89,10 +85,9 @@ export function NavbarMovil({ Wait }) {
 
         {/* Iconos y branding */}
         <div className="flex flex-col justify-center items-center my-9">
-          <h1 className="font-Protest text-4xl -skew-y-6">ENERGIX</h1>
+          <h1 className="font-ArchivoBlack text-4xl -skew-y-6">ENERGIX</h1>
           <div className="flex flex-row my-7">
             {SvgInstagram}
-            {SvgExit}
           </div>
         </div>
       </div>
