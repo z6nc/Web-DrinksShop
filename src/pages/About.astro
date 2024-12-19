@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import {NavbarPrincipal} from "../sections/navbars/navbar.jsx";
 import Footer from "../sections/footer.astro";
 import ABOUT from "../sections/About/about.astro";
+import GALERIA from "../sections/About/Galeria.astro";
 
 ---
 
@@ -10,8 +11,9 @@ import ABOUT from "../sections/About/about.astro";
 <Layout title="ENERGIX">
   <header  class="relative">
     <NavbarPrincipal posicion={"lg:relative lg:bg-black"} client:idle />
-    <main class="lg:max-w-7xl mx-auto ">
+    <main class="lg:max-w-7xl mx-auto  flex flex-col gap-6 lg:gap-24 animate-blurred-fade-in">
       <ABOUT />
+       <GALERIA />
     </main>
     <footer>
       <Footer />
