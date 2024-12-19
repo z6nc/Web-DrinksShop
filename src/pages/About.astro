@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import {NavbarPrincipal} from "../sections/navbars/navbar.jsx";
+import Footer from "../sections/footer.astro";
+import ABOUT from "../sections/About/about.astro";
+
+---
+
+
+<Layout title="ENERGIX">
+  <header  class="relative">
+    <NavbarPrincipal posicion={"lg:relative lg:bg-black"} client:idle />
+    <main class="lg:max-w-7xl mx-auto ">
+      <ABOUT />
+    </main>
+    <footer>
+      <Footer />
+    </footer>
+  </header>
+</Layout>
+
