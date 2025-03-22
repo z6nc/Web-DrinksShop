@@ -1,6 +1,4 @@
-Web Drinks Shop
-
-
+🛠Web Drinks Shop
 
 Web Drinks Shop es una aplicación web diseñada con Astro, React y Tailwind CSS. Presenta un diseño atractivo basado en un catálogo de bebidas energizantes, proteicas e hidratantes.
 
